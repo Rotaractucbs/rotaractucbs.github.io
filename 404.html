@@ -43,19 +43,19 @@
               class="absolute right-4 top-full hidden w-full max-w-[250px] rounded-lg bg-white py-5 shadow-lg dark:bg-dark-2 lg:static lg:block lg:w-full lg:max-w-full lg:bg-transparent lg:px-4 lg:py-0 lg:shadow-none dark:lg:bg-transparent xl:px-6">
               <ul class="blcok lg:flex 2xl:ml-20">
                 <li class="relative group">
-                  <a href="index.html#home"
+                  <a href="/#home"
                     class="flex py-2 mx-8 text-base font-medium ud-menu-scroll text-dark group-hover:text-primary dark:text-white lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 lg:text-body-color dark:lg:text-dark-6">
                     Home
                   </a>
                 </li>
                 <li class="relative group">
-                  <a href="index.html#about"
+                  <a href="/#about"
                     class="flex py-2 mx-8 text-base font-medium ud-menu-scroll text-dark group-hover:text-primary dark:text-white lg:ml-7 lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 lg:text-body-color dark:lg:text-dark-6 xl:ml-10">
                     About
                   </a>
                 </li>
                 <li class="relative group">
-                  <a href="index.html#blog"
+                  <a href="/#blogs"
                     class="flex py-2 mx-8 text-base font-medium ud-menu-scroll text-dark group-hover:text-primary dark:text-white lg:ml-7 lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 lg:text-body-color dark:lg:text-dark-6 xl:ml-10">
                     Blogs
                   </a>
@@ -73,13 +73,13 @@
                   </a>
                 </li>
                 <li class="relative group">
-                  <a href="index.html#team"
+                  <a href="/#team"
                     class="flex py-2 mx-8 text-base font-medium ud-menu-scroll text-dark group-hover:text-primary dark:text-white lg:ml-7 lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 lg:text-body-color dark:lg:text-dark-6 xl:ml-10">
                     Team
                   </a>
                 </li>
                 <li class="relative group">
-                  <a href="index.html#contact"
+                  <a href="/#contact"
                     class="flex py-2 mx-8 text-base font-medium ud-menu-scroll text-dark group-hover:text-primary dark:text-white lg:ml-7 lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 lg:text-body-color dark:lg:text-dark-6 xl:ml-10">
                     Contact
                   </a>
@@ -280,22 +280,22 @@
             <h4 class="mb-9 text-lg font-semibold text-white">About Us</h4>
             <ul>
               <li>
-                <a href="#home" class="mb-3 inline-block text-base text-gray-7 hover:text-primary">
+                <a href="/#home" class="mb-3 inline-block text-base text-gray-7 hover:text-primary">
                   Home
                 </a>
               </li>
               <li>
-                <a href="#about" class="mb-3 inline-block text-base text-gray-7 hover:text-primary">
+                <a href="/#about" class="mb-3 inline-block text-base text-gray-7 hover:text-primary">
                   About
                 </a>
               </li>
               <li>
-                <a href="#team" class="mb-3 inline-block text-base text-gray-7 hover:text-primary">
+                <a href="/#team" class="mb-3 inline-block text-base text-gray-7 hover:text-primary">
                   Team
                 </a>
               </li>
               <li>
-                <a href="#contact" class="mb-3 inline-block text-base text-gray-7 hover:text-primary">
+                <a href="/#contact" class="mb-3 inline-block text-base text-gray-7 hover:text-primary">
                   Contact
                 </a>
               </li>
@@ -582,89 +582,18 @@
   </footer>
   <!-- ====== Footer Section End -->
 
-  <!-- ====== Back To Top Start -->
-  <a href="javascript:void(0)"
-    class="back-to-top fixed bottom-8 left-auto right-8 z-[999] hidden h-10 w-10 items-center justify-center rounded-md bg-primary text-white shadow-md transition duration-300 ease-in-out hover:bg-dark">
-    <span class="mt-[6px] h-3 w-3 rotate-45 border-l border-t border-white"></span>
-  </a>
-  <!-- ====== Back To Top End -->
+    <!-- ====== Back To Top Start -->
+    <a
+      href="javascript:void(0)"
+      class="back-to-top fixed bottom-8 left-auto right-8 z-[999] hidden h-10 w-10 items-center justify-center rounded-md bg-primary text-white shadow-md transition duration-300 ease-in-out hover:bg-dark"
+    >
+      <span
+        class="mt-[6px] h-3 w-3 rotate-45 border-l border-t border-white"
+      ></span>
+    </a>
+    <!-- ====== Back To Top End -->
 
-
-
-  <!-- ====== All Scripts -->
-
-  <script src="assets/js/swiper-bundle.min.js"></script>
-  <script src="assets/js/main.js"></script>
-  <script>
-    // ==== for menu scroll
-    const pageLink = document.querySelectorAll(".ud-menu-scroll");
-
-    pageLink.forEach((elem) => {
-      elem.addEventListener("click", (e) => {
-        e.preventDefault();
-        document.querySelector(elem.getAttribute("href")).scrollIntoView({
-          behavior: "smooth",
-          offsetTop: 1 - 60,
-        });
-      });
-    });
-
-    // section menu active
-    function onScroll(event) {
-      const sections = document.querySelectorAll(".ud-menu-scroll");
-      const scrollPos =
-        window.pageYOffset ||
-        document.documentElement.scrollTop ||
-        document.body.scrollTop;
-
-      for (let i = 0; i < sections.length; i++) {
-        const currLink = sections[i];
-        const val = currLink.getAttribute("href");
-        const refElement = document.querySelector(val);
-        const scrollTopMinus = scrollPos + 73;
-        if (
-          refElement.offsetTop <= scrollTopMinus &&
-          refElement.offsetTop + refElement.offsetHeight > scrollTopMinus
-        ) {
-          document
-            .querySelector(".ud-menu-scroll")
-            .classList.remove("active");
-          currLink.classList.add("active");
-        } else {
-          currLink.classList.remove("active");
-        }
-      }
-    }
-
-    window.document.addEventListener("scroll", onScroll);
-
-    // Testimonial
-    const testimonialSwiper = new Swiper(".testimonial-carousel", {
-      slidesPerView: 1,
-      spaceBetween: 30,
-
-      // Navigation arrows
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-
-      breakpoints: {
-        640: {
-          slidesPerView: 2,
-          spaceBetween: 30,
-        },
-        1024: {
-          slidesPerView: 3,
-          spaceBetween: 30,
-        },
-        1280: {
-          slidesPerView: 3,
-          spaceBetween: 30,
-        },
-      },
-    });
-  </script>
-</body>
-
+    <!-- ====== All Scripts -->
+    <script src="assets/js/main.js"></script>
+  </body>
 </html>
