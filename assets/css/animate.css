@@ -281,3 +281,13 @@
   font-size: 1.1rem;
   animation: pound 0.25s infinite alternate;
 }
+
+@keyframes pound {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.2);
+  }
+}
+
