@@ -199,6 +199,82 @@ function hideToasts() {
   document.getElementById('failureAlert').classList.add('hidden');
 }
 
+document.addEventListener('DOMContentLoaded', function () {
+  // Blog Content
+  const blogContent = [
+    {
+      title: 'Cow Shelter Visit on Independence Day',
+      image: './assets/images/photos/10.jpg',
+      date: 'Aug 15, 2024',
+      description: 'Celebrated Independence Day by supporting local animal welfare through a visit and donations to a nearby cow shelter.',
+      link: 'javascript:void(0)'
+    },
+    {
+      title: 'Rakhi Celebration with Governor, Army and Police',
+      image: './assets/images/photos/6.jpg',
+      date: 'Aug 18, 2023',
+      description: 'Spread festive joy by organizing Rakhi distribution with esteemed guests including the Governor, Army personnel, and Police officers, enhancing community spirit and unity.',
+      link: 'javascript:void(0)'
+    },
+    {
+      title: 'Candle March for Justice',
+      image: './assets/images/photos/11.jpg',
+      date: 'Aug 20, 2023',
+      description: 'Joined a solemn candle march to demand justice for the recent tragic incident in Kolkata, standing in solidarity for victims\' rights.',
+      link: 'javascript:void(0)'
+    }
+  ];
+
+  // Footer Blog Content
+  const footerBlogContent = [
+    {
+      title: 'Rakhi Celebration with Governor, Army and Police...',
+      image: './assets/images/photos/7.jpg',
+      link: '#'
+    },
+    {
+      title: 'Candle March for Justice...',
+      image: './assets/images/photos/11.jpg',
+      link: '#'
+    }
+  ];
+
+  function updateBlogSection(content) {
+    content.forEach((item, index) => {
+      const blogElement = document.querySelector(`.blog-item:nth-child(${index + 1})`);
+      if (blogElement) {
+        blogElement.querySelector('img').src = item.image;
+        blogElement.querySelector('h3 a').textContent = item.title;
+        blogElement.querySelector('.date').textContent = item.date;
+        blogElement.querySelector('p').textContent = item.description;
+        blogElement.querySelector('a').href = item.link;
+      }
+    });
+  }
+
+  function updateFooterBlogs(blogContent) {
+    blogContent.forEach((blog, index) => {
+      const imgElement = document.querySelector(`#footer-blog${index + 1}-img`);
+      const titleElement = document.querySelector(`#footer-blog${index + 1}-title`);
+      const linkElement = imgElement ? imgElement.closest('a') : null;
+
+      // Check if elements exist before setting their properties
+      if (imgElement && titleElement && linkElement) {
+        imgElement.src = blog.image;
+        titleElement.textContent = blog.title;
+        linkElement.href = blog.link;
+      }
+    });
+  }
+
+  // Update Blog Section
+  updateBlogSection(blogContent);
+
+  // Update Footer Blog Section
+  if (document.querySelector('#footer-blog1-img')) {
+    updateFooterBlogs(footerBlogContent);
+  }
+});
 
 
 
