@@ -225,7 +225,7 @@ document.addEventListener('DOMContentLoaded', function () {
     },
     {
       title: 'World Photography Day Competition',
-      image: './assets/images/Blogs/Competition.jpg',
+      image: './assets/images/Blogs/competition.jpg',
       date: 'Aug 19, 2024',
       description: 'Celebrated Independence Day by supporting local animal welfare through a visit and donations to a nearby cow shelter.',
       link: 'javascript:void(0)'
