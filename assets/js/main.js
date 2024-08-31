@@ -203,38 +203,81 @@ document.addEventListener('DOMContentLoaded', function () {
   // Blog Content
   const blogContent = [
     {
-      title: 'Cow Shelter Visit on Independence Day',
-      image: './assets/images/photos/10.jpg',
-      date: 'Aug 15, 2024',
-      description: 'Celebrated Independence Day by supporting local animal welfare through a visit and donations to a nearby cow shelter.',
+      title: 'A Day of Joy and Care for Our Furry Friends',
+      image: './assets/images/Blogs/dog1.jpg',
+      date: 'Aug 25, 2024',
+      description: 'Rotaract UCBS celebrated National Dog Day with a heartwarming event dedicated to our street dogs.',
+      link: 'javascript:void(0)'
+    },
+    {
+      title: 'Candle March for Justice',
+      image: './assets/images/blogs/candle1.jpg',
+      date: 'Aug 20, 2023',
+      description: 'Joined a solemn candle march to demand justice for the recent tragic incident in Kolkata, standing in solidarity for victims\' rights.',
       link: 'javascript:void(0)'
     },
     {
       title: 'Rakhi Celebration with Governor, Army and Police',
-      image: './assets/images/photos/6.jpg',
+      image: './assets/images/blogs/rakhi3.jpg',
       date: 'Aug 18, 2023',
       description: 'Spread festive joy by organizing Rakhi distribution with esteemed guests including the Governor, Army personnel, and Police officers, enhancing community spirit and unity.',
       link: 'javascript:void(0)'
     },
     {
-      title: 'Candle March for Justice',
-      image: './assets/images/photos/11.jpg',
-      date: 'Aug 20, 2023',
-      description: 'Joined a solemn candle march to demand justice for the recent tragic incident in Kolkata, standing in solidarity for victims\' rights.',
+      title: 'World Photography Day Competition',
+      image: './assets/images/Blogs/Competition.jpg',
+      date: 'Aug 19, 2024',
+      description: 'Celebrated Independence Day by supporting local animal welfare through a visit and donations to a nearby cow shelter.',
+      link: 'javascript:void(0)'
+    },
+    {
+      title: 'Cow Shelter Visit on Independence Day',
+      image: './assets/images/Blogs/cow1.jpg',
+      date: 'Aug 15, 2024',
+      description: 'Celebrated Independence Day by supporting local animal welfare through a visit and donations to a nearby cow shelter.',
+      link: 'javascript:void(0)'
+    },
+    {
+      title: ' Blood Donation Drive at Police Ground, Junga',
+      image: './assets/images/Blogs/blood2.jpg',
+      date: 'Aug 07, 2024',
+      description: 'Celebrated Independence Day by supporting local animal welfare through a visit and donations to a nearby cow shelter.',
+      link: 'javascript:void(0)'
+    },
+    {
+      title: 'Igniting Leadership: Rotaract UCBS Engages in Leadership Training',
+      image: './assets/images/Blogs/ltp1.jpg',
+      date: 'July 21, 2024',
+      description: 'The Rotaract Club of UCBS recently participated in District 3080’s Leadership Training Programme (LTP), an event designed to empower and inspire future leaders.',
+      link: 'javascript:void(0)'
+    },
+    {
+      title: 'Green Tomorrow: Tree Plantation at Ava Lodge',
+      image: './assets/images/Blogs/tree1.jpg',
+      date: 'June 24, 2024',
+      description: 'Rotaract UCBS took a step toward a greener future by organising a tree plantation event at Ava Lodge.',
+      link: 'javascript:void(0)'
+    },
+    {
+      title: 'Blood Donation Camp at The Ridge, Shimla',
+      image: './assets/images/Blogs/Blood1.jpg',
+      date: 'May 01, 2024',
+      description: 'Rotaract UCBS, in collaboration with Rotary Club Shimla Hill Queens and the Blood Bank of Kamla Nehru State Hospital, organized a blood donation camp at The Ridge in Shimla.',
       link: 'javascript:void(0)'
     }
+    
   ];
 
   // Footer Blog Content
   const footerBlogContent = [
     {
-      title: 'Rakhi Celebration with Governor, Army and Police...',
-      image: './assets/images/photos/7.jpg',
+      title: 'A Day of Joy and Care for Our Furry Friends',
+      image: '../../assets/images/Blogs/dog1.jpg',
       link: '#'
     },
     {
       title: 'Candle March for Justice...',
-      image: './assets/images/photos/11.jpg',
+      image: '../../assets/images/blogs/candle1.jpg',
       link: '#'
     }
   ];
