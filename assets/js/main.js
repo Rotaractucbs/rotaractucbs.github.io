@@ -211,14 +211,14 @@ document.addEventListener('DOMContentLoaded', function () {
     },
     {
       title: 'Candle March for Justice',
-      image: './assets/images/blogs/candle1.jpg',
+      image: './assets/images/Blogs/candle1.jpg',
       date: 'Aug 20, 2023',
       description: 'Joined a solemn candle march to demand justice for the recent tragic incident in Kolkata, standing in solidarity for victims\' rights.',
       link: 'javascript:void(0)'
     },
     {
       title: 'Rakhi Celebration with Governor, Army and Police',
-      image: './assets/images/blogs/rakhi3.jpg',
+      image: './assets/images/Blogs/rakhi3.jpg',
       date: 'Aug 18, 2023',
       description: 'Spread festive joy by organizing Rakhi distribution with esteemed guests including the Governor, Army personnel, and Police officers, enhancing community spirit and unity.',
       link: 'javascript:void(0)'
@@ -277,7 +277,7 @@ document.addEventListener('DOMContentLoaded', function () {
     },
     {
       title: 'Candle March for Justice...',
-      image: '../../assets/images/blogs/candle1.jpg',
+      image: '../../assets/images/Blogs/candle1.jpg',
       link: '#'
     }
   ];
