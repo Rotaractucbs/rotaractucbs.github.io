@@ -204,21 +204,21 @@ document.addEventListener('DOMContentLoaded', function () {
   const blogContent = [
     {
       title: 'A Day of Joy and Care for Our Furry Friends',
-      image: './assets/images/Blogs/dog1.jpg',
+      image: '../../assets/images/Blogs/dog1.jpg',
       date: 'Aug 25, 2024',
       description: 'Rotaract UCBS celebrated National Dog Day with a heartwarming event dedicated to our street dogs.',
       link: 'javascript:void(0)'
     },
     {
       title: 'Candle March for Justice',
-      image: './assets/images/Blogs/candle1.jpg',
+      image: '../../assets/images/Blogs/candle1.jpg',
       date: 'Aug 20, 2023',
       description: 'Joined a solemn candle march to demand justice for the recent tragic incident in Kolkata, standing in solidarity for victims\' rights.',
       link: 'javascript:void(0)'
     },
     {
       title: 'Rakhi Celebration with Governor, Army and Police',
-      image: './assets/images/Blogs/rakhi3.jpg',
+      image: '../../assets/images/Blogs/rakhi3.jpg',
       date: 'Aug 18, 2023',
       description: 'Spread festive joy by organizing Rakhi distribution with esteemed guests including the Governor, Army personnel, and Police officers, enhancing community spirit and unity.',
       link: 'javascript:void(0)'
@@ -263,7 +263,7 @@ document.addEventListener('DOMContentLoaded', function () {
       image: './assets/images/Blogs/Blood1.jpg',
       date: 'May 01, 2024',
       description: 'Rotaract UCBS, in collaboration with Rotary Club Shimla Hill Queens and the Blood Bank of Kamla Nehru State Hospital, organized a blood donation camp at The Ridge in Shimla.',
-      link: 'javascript:void(0)'
+      link: '../../src/Blogs/blooddonation1.html'
     }
     
   ];
@@ -318,7 +318,5 @@ document.addEventListener('DOMContentLoaded', function () {
     updateFooterBlogs(footerBlogContent);
   }
 });
-
-
 
 
