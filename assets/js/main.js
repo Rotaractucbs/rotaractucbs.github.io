@@ -203,6 +203,20 @@ document.addEventListener('DOMContentLoaded', function () {
   // Blog Content
   const blogContent = [
     {
+      title: 'Trip to Leh Ladakh',
+      image: '../../assets/images/Blogs/leh1.jpg',
+      date: 'Sep 13, 2024',
+      description: 'Details of the journey: Manali to Leh, Nubra Valley, Pangong Lake, and back to Leh.',
+      link: 'javascript:void(0)'
+    },
+    {
+      title: 'Pinning Ceremony Of BODs 2024-25',
+      image: '../../assets/images/Blogs/pinning1.jpg',
+      date: 'Sep 03, 2024',
+      description: 'Highlight the importance of the pinning tradition in recognizing leadership and responsibility.',
+      link: 'javascript:void(0)'
+    },
+    {
       title: 'A Day of Joy and Care for Our Furry Friends',
       image: '../../assets/images/Blogs/dog1.jpg',
       date: 'Aug 25, 2024',
