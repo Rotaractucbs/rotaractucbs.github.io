@@ -285,13 +285,13 @@ document.addEventListener('DOMContentLoaded', function () {
   // Footer Blog Content
   const footerBlogContent = [
     {
-      title: 'A Day of Joy and Care for Our Furry Friends',
-      image: '../../assets/images/Blogs/dog1.jpg',
+      title: 'Trip to Leh Ladakh',
+      image: '../../assets/images/Blogs/leh1.jpg',
       link: '#'
     },
     {
-      title: 'Candle March for Justice...',
-      image: '../../assets/images/Blogs/candle1.jpg',
+      title: 'Pinning Ceremony Of BODs 2024-25',
+      image: '../../assets/images/Blogs/pinning1.jpg',
       link: '#'
     }
   ];
