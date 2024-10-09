@@ -203,10 +203,17 @@ document.addEventListener('DOMContentLoaded', function () {
   // Blog Content
   const blogContent = [
     {
+      title: 'Installation Ceremony of Rtr. Rijul Sen',
+      image: '../../assets/images/Blogs/installation1.jpg',
+      date: 'Sep 25, 2024',
+      description: 'Join us for the prestigious Installation Ceremony of Rtr. Rijul Sen as the President of Rotaract Club UCBS for the term 2024-2025.',
+      link: 'javascript:void(0)'
+    },
+    {
       title: 'Trip to Leh Ladakh',
       image: '../../assets/images/Blogs/leh1.jpg',
       date: 'Sep 13, 2024',
-      description: 'Details of the journey: Manali to Leh, Nubra Valley, Pangong Lake, and back to Leh.',
+      description: 'Experience the breathtaking beauty of the Himalayas with our adventurous road trip from Manali to Leh.',
       link: 'javascript:void(0)'
     },
     {
@@ -285,13 +292,13 @@ document.addEventListener('DOMContentLoaded', function () {
   // Footer Blog Content
   const footerBlogContent = [
     {
-      title: 'Trip to Leh Ladakh',
-      image: '../../assets/images/Blogs/leh1.jpg',
+      title: 'Installation Ceremony of Rtr. Rijul Sen',
+      image: '../../assets/images/Blogs/installation1.jpg',
       link: '#'
     },
     {
-      title: 'Pinning Ceremony Of BODs 2024-25',
-      image: '../../assets/images/Blogs/pinning1.jpg',
+      title: 'Trip to Leh Ladakh',
+      image: '../../assets/images/Blogs/leh1.jpg',
       link: '#'
     }
   ];
