@@ -238,17 +238,17 @@ document.addEventListener('DOMContentLoaded', function () {
       link: 'javascript:void(0)'
     },
     {
-      title: 'Rakhi Celebration with Governor, Army and Police',
-      image: '../../assets/images/Blogs/rakhi3.jpg',
-      date: 'Aug 18, 2023',
-      description: 'Spread festive joy by organizing Rakhi distribution with esteemed guests including the Governor, Army personnel, and Police officers, enhancing community spirit and unity.',
-      link: 'javascript:void(0)'
-    },
-    {
       title: 'World Photography Day Competition',
       image: './assets/images/Blogs/competition.jpg',
       date: 'Aug 19, 2024',
       description: 'Celebrated Independence Day by supporting local animal welfare through a visit and donations to a nearby cow shelter.',
+      link: 'javascript:void(0)'
+    },
+    {
+      title: 'Rakhi Celebration with Governor, Army and Police',
+      image: '../../assets/images/Blogs/rakhi3.jpg',
+      date: 'Aug 18, 2023',
+      description: 'Spread festive joy by organizing Rakhi distribution with esteemed guests including the Governor, Army personnel, and Police officers, enhancing community spirit and unity.',
       link: 'javascript:void(0)'
     },
     {
