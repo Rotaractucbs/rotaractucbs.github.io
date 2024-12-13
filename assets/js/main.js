@@ -203,6 +203,27 @@ document.addEventListener('DOMContentLoaded', function () {
   // Blog Content
   const blogContent = [
     {
+      title: '🌟 Project WASH: Promoting Health Through Clean Water and Hygiene! 🌟',
+      image: '../../assets/images/photos/55.jpg',
+      date: 'Dec 13, 2024',
+      description: 'We are proud to announce the successful completion of Project WASH, an initiative dedicated to promoting water, sanitation, and hygiene (WASH) awareness among students. This project focused on the importance of clean water access, proper sanitation practices, and maintaining hygiene to prevent illness. 🚰💧',
+      link: 'javascript:void(0)'
+    },
+    {
+      title: '🌟 Health First Initiative: Empowering Students with First Aid Knowledge! 🌟',
+      image: '../../assets/images/photos/45.jpg',
+      date: 'Dec 13, 2024',
+      description: 'We are excited to share the success of our Health First Initiative, a transformative session where we equipped students with essential first aid skills and infection prevention knowledge. This initiative aimed to empower students to respond effectively in emergencies and maintain their health and well-being. 🩺💪',
+      link: 'javascript:void(0)'
+    },
+    {
+      title: '🌟 Breaking Barriers: A Successful Start with Mental Health Talk! 🌟',
+      image: '../../assets/images/photos/46.png',
+      date: 'Dec 11, 2024',
+      description: 'We are delighted to share the success of the first session of Breaking Barriers, a series dedicated to exploring diverse and impactful topics. Our inaugural session, focused on mental health, featured an insightful talk by Dr. Ravi Sharma, who captivated the audience with his expertise and compassionate approach. 🗣💬',
+      link: 'javascript:void(0)'
+    },
+    {
       title: 'Installation Ceremony of Rtr. Rijul Sen',
       image: '../../assets/images/Blogs/installation1.jpg',
       date: 'Sep 25, 2024',
@@ -292,13 +313,13 @@ document.addEventListener('DOMContentLoaded', function () {
   // Footer Blog Content
   const footerBlogContent = [
     {
-      title: 'Installation Ceremony of Rtr. Rijul Sen',
-      image: '../../assets/images/Blogs/installation1.jpg',
+      title: '🌟 Project WASH 🌟',
+      image: '../../assets/images/photos/55.jpg',
       link: '#'
     },
     {
-      title: 'Trip to Leh Ladakh',
-      image: '../../assets/images/Blogs/leh1.jpg',
+      title: '🌟 Health First Initiative 🌟',
+      image: '../../assets/images/photos/45.jpg',
       link: '#'
     }
   ];
