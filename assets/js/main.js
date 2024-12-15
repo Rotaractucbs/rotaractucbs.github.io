@@ -315,12 +315,12 @@ document.addEventListener('DOMContentLoaded', function () {
     {
       title: 'Promoting Health Through Clean Water and Hygiene!',
       image: '../../assets/images/photos/55.jpg',
-      link: '#'
+      link: '../../blog-grids.html'
     },
     {
       title: 'Empowering Students with First Aid Knowledge!',
       image: '../../assets/images/photos/45.jpg',
-      link: '#'
+      link: '../../blog-grids.html'
     }
   ];
 
