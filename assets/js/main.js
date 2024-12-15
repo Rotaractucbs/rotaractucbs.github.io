@@ -13,7 +13,7 @@
       ud_header.classList.remove("sticky");
     }
 
-    if(logo.length) {
+    if (logo.length) {
       // === logo change
       if (ud_header.classList.contains("sticky")) {
         document.querySelector(".header-logo").src =
@@ -25,12 +25,12 @@
     }
 
     if (document.documentElement.classList.contains("dark")) {
-      if(logo.length) {
+      if (logo.length) {
         // === logo change
         if (ud_header.classList.contains("sticky")) {
           document.querySelector(".header-logo").src =
             "assets/images/logo/logo.png"
-        } 
+        }
       }
     }
 
@@ -118,7 +118,7 @@
     scrollTo(document.documentElement);
   };
 
-    /* ========  themeSwitcher start ========= */
+  /* ========  themeSwitcher start ========= */
 
   // themeSwitcher
   const themeSwitcher = document.getElementById('themeSwitcher');
@@ -169,20 +169,20 @@ function sendMail(event) {
   };
 
   emailjs.send('service_5pg5u58', 'template_prbtn4k', parms)
-    .then(function(response) {
+    .then(function (response) {
       showToast('successAlert', 'success');
-    }, function(error) {
+    }, function (error) {
       showToast('failureAlert', 'failure');
     });
 }
 
 function showToast(alertId, type) {
   hideToasts();  // Hide all toasts before showing the current one
-  
+
   const toast = document.getElementById(alertId);
   toast.classList.remove('hidden');
   toast.classList.add('show', type);
-  
+
   // Optionally, auto-hide the toast after a few seconds
   setTimeout(() => {
     hideToast(toast);
@@ -213,7 +213,7 @@ document.addEventListener('DOMContentLoaded', function () {
       title: 'Health First Initiative: Empowering Students with First Aid Knowledge!',
       image: '../../assets/images/photos/45.jpg',
       date: 'Dec 13, 2024',
-      description: 'We are excited to share the success of our Health First Initiative, a transformative session where we equipped students with essential first aid skills and infection prevention knowledge. This initiative aimed to empower students to respond effectively in emergencies and maintain their health and well-being. 🩺💪',
+      description: 'We are thrilled to share the success of our Health First Initiative, a transformative session where we equipped students with essential first aid skills and infection prevention knowledge. This initiative aimed to empower students to respond effectively in emergencies and maintain their health and well-being. To further support their efforts, we donated 50 first aid kits. 🩺💪',
       link: 'javascript:void(0)'
     },
     {
@@ -227,87 +227,87 @@ document.addEventListener('DOMContentLoaded', function () {
       title: 'Installation Ceremony of Rtr. Rijul Sen',
       image: '../../assets/images/Blogs/installation1.jpg',
       date: 'Sep 25, 2024',
-      description: 'Join us for the prestigious Installation Ceremony of Rtr. Rijul Sen as the President of Rotaract Club UCBS for the term 2024-2025.',
+      description: 'Rotaract Club UCBS celebrated the installation of Rtr. Rijul Sen as President for 2024-25! 🎉 The ceremony, held at Rotary Town Hall, Shimla, was graced by esteemed guests, including DRR Rtr. Shashank Kaushik and Rtn. Maala Singh. 🤝 Rtr. Rijul Sen and Rtr. Ayush Sharma were sworn in as President and Secretary, respectively. 💼 The event was a testament to the clubs commitment to service and leadership. 💪',
       link: 'javascript:void(0)'
     },
     {
       title: 'Trip to Leh Ladakh',
       image: '../../assets/images/Blogs/leh1.jpg',
       date: 'Sep 13, 2024',
-      description: 'Experience the breathtaking beauty of the Himalayas with our adventurous road trip from Manali to Leh.',
+      description: 'The Rotaract Club of UCBS embarked on an unforgettable adventure through the breathtaking landscapes of Leh-Ladakh! 🏔️ From the majestic Khardung La Pass to the serene Pangong Lake, they explored stunning vistas and embraced the spirit of adventure. 🏕️ Along the way, they promoted environmental awareness and supported local communities, making a positive impact. 🌍 This journey was not just about exploration but also about fostering strong bonds and creating lifelong memories. 🤝❤️',
       link: 'javascript:void(0)'
     },
     {
       title: 'Pinning Ceremony Of BODs 2024-25',
       image: '../../assets/images/Blogs/pinning1.jpg',
       date: 'Sep 03, 2024',
-      description: 'Highlight the importance of the pinning tradition in recognizing leadership and responsibility.',
+      description: 'Rotaract Club UCBS celebrated the induction of its new leadership team at a pinning ceremony held at Rotary Town Hall, Shimla. 🎉 The event honored the commitment of the new board members to service, integrity, and fellowship. 🤝 With the pinning of the official Rotaract badge, the club welcomed a new era of leadership and community impact.',
       link: 'javascript:void(0)'
     },
     {
       title: 'A Day of Joy and Care for Our Furry Friends',
       image: '../../assets/images/Blogs/dog1.jpg',
       date: 'Aug 25, 2024',
-      description: 'Rotaract UCBS celebrated National Dog Day with a heartwarming event dedicated to our street dogs.',
+      description: 'Rotaract UCBS marked International Dog Day with a heartwarming event dedicated to our beloved street dogs. We organized a special feeding drive, providing nutritious meals and essential supplies to these furry companions. Lets spread love and compassion for all creatures, big and small. 🐾',
       link: 'javascript:void(0)'
     },
     {
       title: 'Candle March for Justice',
       image: '../../assets/images/Blogs/candle1.jpg',
       date: 'Aug 20, 2023',
-      description: 'Joined a solemn candle march to demand justice for the recent tragic incident in Kolkata, standing in solidarity for victims\' rights.',
+      description: 'We joined a solemn candle march with fellow Rotaract and Rotary members, along with other NGOs, at Mall Road, Shimla, to express our deep sorrow and outrage over the tragic incident in Kolkata. We stand united in solidarity with the victims family and call for a thorough investigation and swift justice. Lets work together to create a safer and more compassionate society. 🕯️💔',
       link: 'javascript:void(0)'
     },
     {
       title: 'World Photography Day Competition',
       image: './assets/images/Blogs/competition.jpg',
       date: 'Aug 19, 2024',
-      description: 'Celebrated Independence Day by supporting local animal welfare through a visit and donations to a nearby cow shelter.',
+      description: 'Rotaract UCBS organized a captivating photography competition to celebrate World Photography Day. The event showcased the incredible talent of our members, as they captured the beauty and diversity of life through their lenses. From stunning landscapes to heartwarming portraits, the competition showcased the power of photography to inspire and connect. 📸🌟',
       link: 'javascript:void(0)'
     },
     {
       title: 'Rakhi Celebration with Governor, Army and Police',
       image: '../../assets/images/Blogs/rakhi3.jpg',
       date: 'Aug 18, 2023',
-      description: 'Spread festive joy by organizing Rakhi distribution with esteemed guests including the Governor, Army personnel, and Police officers, enhancing community spirit and unity.',
+      description: 'We celebrated Raksha Bandhan by organizing a special Rakhi distribution ceremony with the esteemed Governor of Himachal Pradesh, along with brave Army personnel and dedicated Police officers. By tying over 70 Rakhis, we strengthened the bond of brotherhood and celebrated the spirit of unity and patriotism. 🇮🇳❤️',
       link: 'javascript:void(0)'
     },
     {
       title: 'Cow Shelter Visit on Independence Day',
       image: './assets/images/Blogs/cow1.jpg',
       date: 'Aug 15, 2024',
-      description: 'Celebrated Independence Day by supporting local animal welfare through a visit and donations to a nearby cow shelter.',
+      description: 'This Independence Day, we chose to celebrate by giving back to our community. We visited a local cow shelter and extended a helping hand to these gentle creatures. By donating essential supplies and spending quality time with them, we experienced a sense of fulfillment and gratitude. Its a small step, but its a step towards a more compassionate and sustainable future. 🐮🙏',
       link: 'javascript:void(0)'
     },
     {
       title: ' Blood Donation Drive at Police Ground, Junga',
       image: './assets/images/Blogs/blood2.jpg',
       date: 'Aug 07, 2024',
-      description: 'Celebrated Independence Day by supporting local animal welfare through a visit and donations to a nearby cow shelter.',
+      description: 'Rotary Club Shimla HillQueens, in collaboration with Himachal Pradesh Armed Police 1st Battalion Junga, successfully organized a blood donation camp despite challenging weather. 🩸💪 Over 30 units of blood were collected and donated to IGMC Hospital Shimla blood bank. 🏥 The event was made possible by the support of Mr. Rohit Malpani IPS and Deputy Commandant Babita Rana. 🤝',
       link: 'javascript:void(0)'
     },
     {
       title: 'Igniting Leadership: Rotaract UCBS Engages in Leadership Training',
       image: './assets/images/Blogs/ltp1.jpg',
       date: 'July 21, 2024',
-      description: 'The Rotaract Club of UCBS recently participated in District 3080’s Leadership Training Programme (LTP), an event designed to empower and inspire future leaders.',
+      description: 'The Rotaract Club of UCBS recently participated in District 3080’s Leadership Training Programme (LTP). This transformative event, designed to empower and inspire future leaders, provided Rotaract members with valuable insights, skills, and networking opportunities. Through engaging workshops, inspiring talks, and interactive sessions, participants gained a deeper understanding of leadership principles, effective communication, and community service.  🚀',
       link: 'javascript:void(0)'
     },
     {
       title: 'Green Tomorrow: Tree Plantation at Ava Lodge',
       image: './assets/images/Blogs/tree1.jpg',
       date: 'June 24, 2024',
-      description: 'Rotaract UCBS took a step toward a greener future by organising a tree plantation event at Ava Lodge.',
+      description: 'Rotaract Club UCBS took a significant step towards a greener future by organizing a tree plantation drive at Ava Lodge, Chaura Maidan, Shimla. The initiative aimed to enhance environmental sustainability by planting over 50 trees and flowers, which contribute to cleaner air, soil conservation, and biodiversity. 🌳🌎',
       link: 'javascript:void(0)'
     },
     {
       title: 'Blood Donation Camp at The Ridge, Shimla',
       image: './assets/images/Blogs/Blood1.jpg',
       date: 'May 01, 2024',
-      description: 'Rotaract UCBS, in collaboration with Rotary Club Shimla Hill Queens and the Blood Bank of Kamla Nehru State Hospital, organized a blood donation camp at The Ridge in Shimla.',
-      link: '../../src/Blogs/blooddonation1.html'
+      description: 'Rotary Club Shimla Hill Queens, in collaboration with Rotaract Club UCBS and Kamla Nehru State Hospital Blood Bank, organized a successful blood donation camp at the historic Ridge on May 1st. The camp aimed to address the urgent need for blood donations and collected 56 units of blood from 70 generous donors. 🩸❤️',
+      link: 'javascript:void(0)'
     }
-    
+
   ];
 
   // Footer Blog Content
@@ -361,19 +361,19 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 });
 
-  /**
-   * Init typed.js
-   */
-  const selectTyped = document.querySelector('.typed');
-  if (selectTyped) {
-    let typed_strings = selectTyped.getAttribute('data-typed-items');
-    typed_strings = typed_strings.split(',');
-    new Typed('.typed', {
-      strings: typed_strings,
-      loop: true,
-      typeSpeed: 100,
-      backSpeed: 50,
-      backDelay: 2000
-    });
-  }
+/**
+ * Init typed.js
+ */
+const selectTyped = document.querySelector('.typed');
+if (selectTyped) {
+  let typed_strings = selectTyped.getAttribute('data-typed-items');
+  typed_strings = typed_strings.split(',');
+  new Typed('.typed', {
+    strings: typed_strings,
+    loop: true,
+    typeSpeed: 100,
+    backSpeed: 50,
+    backDelay: 2000
+  });
+}
 
