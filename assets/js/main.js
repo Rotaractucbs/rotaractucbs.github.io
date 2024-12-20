@@ -118,43 +118,48 @@
     scrollTo(document.documentElement);
   };
 
-  /* ========  themeSwitcher start ========= */
+/* ======== themeSwitcher start ========= */
 
-  // themeSwitcher
-  const themeSwitcher = document.getElementById('themeSwitcher');
+// themeSwitcher
+const themeSwitcher = document.getElementById('themeSwitcher');
 
-  // Theme Vars
-  const userTheme = localStorage.getItem('theme');
-  const systemTheme = window.matchMedia('(prefers-color0scheme: dark)').matches;
+// Theme Vars
+const userTheme = localStorage.getItem('theme');
+const systemTheme = window.matchMedia('(prefers-color-scheme: dark)').matches;
 
-  // Initial Theme Check
-  const themeCheck = () => {
-    if (userTheme === 'dark' || (!userTheme && systemTheme)) {
-      document.documentElement.classList.add('dark');
-      return;
-    }
-  };
-
-  // Manual Theme Switch
-  const themeSwitch = () => {
-    if (document.documentElement.classList.contains('dark')) {
-      document.documentElement.classList.remove('dark');
-      localStorage.setItem('theme', 'light');
-      return;
-    }
-
+// Initial Theme Check
+const themeCheck = () => {
+  if (userTheme === 'dark' || (!userTheme && systemTheme)) {
     document.documentElement.classList.add('dark');
-    localStorage.setItem('theme', 'dark');
-  };
+    return;
+  }
+  document.documentElement.classList.remove('dark');
+};
 
-  // call theme switch on clicking buttons
+// Manual Theme Switch
+const themeSwitch = () => {
+  if (document.documentElement.classList.contains('dark')) {
+    document.documentElement.classList.remove('dark');
+    localStorage.setItem('theme', 'light');
+    return;
+  }
+
+  document.documentElement.classList.add('dark');
+  localStorage.setItem('theme', 'dark');
+};
+
+// call theme switch on clicking buttons
+if (themeSwitcher) {
   themeSwitcher.addEventListener('click', () => {
     themeSwitch();
   });
+}
 
-  // invoke theme check on initial load
-  themeCheck();
-  /* ========  themeSwitcher End ========= */
+// invoke theme check on initial load
+themeCheck();
+
+/* ======== themeSwitcher End ========= */
+
 })();
 
 // EmailJS
@@ -298,6 +303,13 @@ document.addEventListener('DOMContentLoaded', function () {
       image: './assets/images/Blogs/tree1.jpg',
       date: 'June 24, 2024',
       description: 'Rotaract Club UCBS took a significant step towards a greener future by organizing a tree plantation drive at Ava Lodge, Chaura Maidan, Shimla. The initiative aimed to enhance environmental sustainability by planting over 50 trees and flowers, which contribute to cleaner air, soil conservation, and biodiversity. 🌳🌎',
+      link: 'javascript:void(0)'
+    },
+    {
+      title: '🎉 Charter Presentation of Rotaract Club of UCBS by District Governor 🎓',
+      image: './assets/images/Blogs/dg.jpg',
+      date: 'May 17, 2024',
+      description: 'The official visit of District Governor Rtn. Arun Mongia to RCS Hill Queens marked a significant milestone with the formal pinning and charter presentation of the newly formed Rotaract Club of UCBS. 🌟 The ceremony was graced by the First Lady of the District, Rtn. Charu Mongia, and Assistant Governor CA/Rtn. Rohit Karol, emphasizing Rotarys commitment to empowering youth and fostering leadership. 💡✨ This memorable occasion celebrated the induction of this vibrant new club into the Rotary family, inspiring future initiatives and collaborations. 🤝🎊',
       link: 'javascript:void(0)'
     },
     {
