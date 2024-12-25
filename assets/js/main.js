@@ -301,7 +301,7 @@ document.addEventListener('DOMContentLoaded', function () {
     {
       title: 'Green Tomorrow: Tree Plantation at Ava Lodge',
       image: './assets/images/Blogs/tree1.jpg',
-      date: 'June 24, 2024',
+      date: 'July 02, 2024',
       description: 'Rotaract Club UCBS took a significant step towards a greener future by organizing a tree plantation drive at Ava Lodge, Chaura Maidan, Shimla. The initiative aimed to enhance environmental sustainability by planting over 50 trees and flowers, which contribute to cleaner air, soil conservation, and biodiversity. 🌳🌎',
       link: 'javascript:void(0)'
     },
