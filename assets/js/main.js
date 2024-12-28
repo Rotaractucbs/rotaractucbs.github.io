@@ -225,8 +225,8 @@ document.addEventListener('DOMContentLoaded', function () {
       title: 'Breaking Barriers: A Successful Start with Mental Health Talk!',
       image: '../../assets/images/photos/46.png',
       date: 'Dec 11, 2024',
-      description: 'We are delighted to share the success of the first session of Breaking Barriers, a series dedicated to exploring diverse and impactful topics. Our inaugural session, focused on mental health, featured an insightful talk by Dr. Ravi Sharma, who captivated the audience with his expertise and compassionate approach. 🗣💬',
-      link: 'javascript:void(0)'
+      description: 'We are delighted to share the success of the first session of Breaking Barriers, a series dedicated to exploring diverse and impactful topics. Our inaugural session, focused on mental health, featured an insightful talk by Dr. Ravi Sharma, who captivated the audience with his expertise and compassionate approach. 🗣💬 Click on the Title to Watch Now!!!',
+      link: 'https://fb.watch/wL_7Bj9LI6/'
     },
     {
       title: 'Installation Ceremony of Rtr. Rijul Sen',
@@ -321,6 +321,9 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
   ];
+  
+
+
 
   // Footer Blog Content
   const footerBlogContent = [
