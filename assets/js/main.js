@@ -348,9 +348,20 @@ document.addEventListener('DOMContentLoaded', function () {
         blogElement.querySelector('.date').textContent = item.date;
         blogElement.querySelector('p').textContent = item.description;
         blogElement.querySelector('a').href = item.link;
+
+        // Make the title clickable as well
+        const titleLink = blogElement.querySelector('h3 a');
+        titleLink.addEventListener('click', function () {
+          window.location.href = item.link;
+        });
       }
     });
   }
+
+  // Call the function to update blog content
+  updateBlogSection(blogContent);
+
+
 
   function updateFooterBlogs(blogContent) {
     blogContent.forEach((blog, index) => {
