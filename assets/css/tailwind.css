@@ -3185,7 +3185,10 @@ body {
 ::-webkit-scrollbar-track {
   background: #f1f5f9; /* Light background for the track */
   border-radius: 10px;
-}/* Preloader Styles */
+
+  
+}
+/* Preloader Styles */
 #loader-wrapper {
   position: fixed;
   top: 0;
@@ -3199,10 +3202,10 @@ body {
   align-items: center;
 }
 
-/* Loader Image Styles */
-#loader-wrapper .loader img {
-  width: 150px; /* Adjust the size as necessary */
-  height: auto;
+/* If you want to adjust the Lottie animation size directly */
+#lottie-loader {
+  width: 250px;  /* Adjust the width here */
+  height: 250px; /* Adjust the height here */
 }
 
 /* Main Content (Hidden Initially) */
