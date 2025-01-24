@@ -3066,7 +3066,7 @@ body {
   transition: color 0.3s ease;
 }
 .swiper-button-next:hover, .swiper-button-prev:hover {
-  color: #ffd700; /* Golden color */
+  color: white; /* Golden color */
 }
 
 /* Swiper Pagination Styling */
