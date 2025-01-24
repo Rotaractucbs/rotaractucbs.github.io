@@ -3171,3 +3171,18 @@ body {
   }
 }
 
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px; /* Width of the scrollbar */
+}
+::-webkit-scrollbar-thumb {
+  background-color: #0d6efd; /* Primary color for the scrollbar */
+  border-radius: 10px; /* Rounded corners */
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+}
+::-webkit-scrollbar-track {
+  background: #f1f5f9; /* Light background for the track */
+  border-radius: 10px;
+}

@@ -62,5 +62,27 @@ module.exports = {
   variants: {
     extend: {},
   },
-  plugins: [],
+  plugins: [
+    plugin(function({ addUtilities, theme }) {
+      addUtilities({
+        '.scrollbar': {
+          'scrollbar-width': 'thin',
+          '&::-webkit-scrollbar': {
+            width: '10px',
+          },
+          '&::-webkit-scrollbar-thumb': {
+            backgroundColor: theme('colors.primary'),
+            borderRadius: '10px',
+          },
+          '&::-webkit-scrollbar-thumb:hover': {
+            backgroundColor: theme('colors.blue.600'),
+          },
+          '&::-webkit-scrollbar-track': {
+            backgroundColor: theme('colors.gray.100'),
+            borderRadius: '10px',
+          },
+        },
+      });
+    }),
+  ],
 }
