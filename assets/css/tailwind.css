@@ -3060,3 +3060,130 @@ body {
     padding: 60px;
   }
 }
+.swiper-button-next, .swiper-button-prev {
+  color: white;
+  transition: color 0.3s ease;
+}
+.swiper-button-next:hover, .swiper-button-prev:hover {
+  color: #ffd700; /* Golden color */
+}
+.swiper-pagination-bullet {
+  background: rgba(255, 255, 255, 0.6);
+}
+.swiper-pagination-bullet-active {
+  background: #ffffff;
+}
+
+/* Full-Screen Swiper Container */
+.swiper-container {
+  width: 100vw; /* Full width of the viewport */
+  height: 100vh; /* Full height of the viewport */
+  position: relative; /* Required for positioning children */
+  overflow: hidden; /* Hide overflowed content */
+}
+
+/* Swiper Slide Style */
+.swiper-slide {
+  position: relative;
+  height: 100%; /* Full height */
+  width: 100%; /* Full width */
+}
+
+/* Ensure the image covers the entire screen */
+.logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Cover the whole area */
+  z-index: -1; /* Keep image in the background */
+}
+
+/* Text Content Styling */
+.text-content {
+  position: absolute;
+  bottom: 20px; /* Position 20px from the bottom */
+  left: 20px; /* Position 20px from the left */
+  background-color: rgba(0, 123, 255, 0.7); /* Semi-transparent background */
+  padding: 15px;
+  border-radius: 10px;
+  z-index: 1; /* Text should be on top of the image */
+  max-width: 90%; /* Limit text width */
+  word-wrap: break-word; /* Prevent text from overflowing */
+}
+
+/* Style for Heading and Subheading */
+.text-content h1,
+.text-content p {
+  color: white; /* White text */
+  margin: 0; /* Remove default margin */
+}
+
+/* Hero Heading */
+.text-content h1 {
+  font-size: 3rem;
+  line-height: 1.2;
+}
+
+/* Subheading */
+.text-content p {
+  font-size: 1.8rem;
+  margin-top: 5px;
+}
+
+/* Responsive Styling for Tablet and Mobile Screens */
+@media (max-width: 1024px) {
+  /* For tablets, reduce padding and adjust text size */
+  .text-content {
+    padding: 12px;
+    bottom: 15px; /* Slightly reduce space from bottom */
+    left: 15px; /* Slightly reduce space from left */
+  }
+
+  .text-content h1 {
+    font-size: 2.8rem; /* Slightly smaller heading font size */
+  }
+
+  .text-content p {
+    font-size: 1.6rem; /* Slightly smaller paragraph font size */
+  }
+}
+
+@media (max-width: 768px) {
+  /* For smaller tablets and larger mobile devices */
+  .text-content {
+    padding: 10px;
+    bottom: 10px; /* Reduce space from bottom */
+    left: 10px; /* Reduce space from left */
+  }
+
+  .text-content h1 {
+    font-size: 2.5rem; /* Smaller heading font size */
+  }
+
+  .text-content p {
+    font-size: 1.5rem; /* Smaller paragraph font size */
+  }
+}
+
+@media (max-width: 480px) {
+  /* For mobile devices */
+  .text-content {
+    padding: 8px;
+    bottom: 5px; /* Further reduce space from the bottom */
+    left: 5px; /* Further reduce space from the left */
+  }
+
+  .text-content h1 {
+    font-size: 2rem; /* Further reduce heading font size */
+  }
+
+  .text-content p {
+    font-size: 1.3rem; /* Further reduce paragraph font size */
+  }
+}
+
+
+
+

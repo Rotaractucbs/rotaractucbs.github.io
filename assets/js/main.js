@@ -402,4 +402,18 @@ if (selectTyped) {
     backDelay: 2000
   });
 }
+var swiper = new Swiper('.swiper-container', {
+  loop: true, // Infinite loop
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+  autoplay: {
+    delay: 5000, // Autoplay every 5 seconds
+  },
+});
 
