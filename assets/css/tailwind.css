@@ -3122,19 +3122,19 @@ body {
 
 /* Hero Heading */
 .text-content h1 {
-  font-size: 3rem;
+  font-size: 2.5rem; /* Standard size for larger screens */
   line-height: 1.2;
 }
 
 /* Subheading */
 .text-content p {
-  font-size: 1.8rem;
+  font-size: 1.5rem; /* Standard size for larger screens */
   margin-top: 5px;
 }
 
 /* Responsive Styling for Tablet and Mobile Screens */
 @media (max-width: 1024px) {
-  /* For tablets, reduce padding and adjust text size */
+  /* For tablets */
   .text-content {
     padding: 12px;
     bottom: 15px; /* Slightly reduce space from bottom */
@@ -3142,11 +3142,11 @@ body {
   }
 
   .text-content h1 {
-    font-size: 2.8rem; /* Slightly smaller heading font size */
+    font-size: 2rem; /* Smaller heading for tablets */
   }
 
   .text-content p {
-    font-size: 1.6rem; /* Slightly smaller paragraph font size */
+    font-size: 1.3rem; /* Smaller paragraph for tablets */
   }
 }
 
@@ -3159,11 +3159,11 @@ body {
   }
 
   .text-content h1 {
-    font-size: 2.5rem; /* Smaller heading font size */
+    font-size: 1.7rem; /* Even smaller heading for small tablets and large mobiles */
   }
 
   .text-content p {
-    font-size: 1.5rem; /* Smaller paragraph font size */
+    font-size: 1.2rem; /* Even smaller paragraph for small tablets and large mobiles */
   }
 }
 
@@ -3176,14 +3176,10 @@ body {
   }
 
   .text-content h1 {
-    font-size: 2rem; /* Further reduce heading font size */
+    font-size: 1.5rem; /* Smaller heading for mobile */
   }
 
   .text-content p {
-    font-size: 1.3rem; /* Further reduce paragraph font size */
+    font-size: 1rem; /* Smaller paragraph for mobile */
   }
 }
-
-
-
-
