@@ -434,3 +434,9 @@ var swiper = new Swiper('.swiper-container', {
   },
 });
 
+window.addEventListener("load", function () {
+  // Hide the preloader
+  document.getElementById("loader-wrapper").style.display = "none";
+  // Show the main content
+  document.getElementById("main-content").style.display = "flex";
+});

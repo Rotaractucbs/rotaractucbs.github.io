@@ -3185,4 +3185,27 @@ body {
 ::-webkit-scrollbar-track {
   background: #f1f5f9; /* Light background for the track */
   border-radius: 10px;
+}/* Preloader Styles */
+#loader-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Loader Image Styles */
+#loader-wrapper .loader img {
+  width: 150px; /* Adjust the size as necessary */
+  height: auto;
+}
+
+/* Main Content (Hidden Initially) */
+#main-content {
+  display: none;
 }
