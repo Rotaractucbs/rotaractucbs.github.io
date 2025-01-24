@@ -3169,10 +3169,5 @@ body {
   .text-content p {
     font-size: 1rem; /* Adjust paragraph size */
   }
-  .swiper-container {
-    width: 100%; /* Ensure it takes full width */
-    height: auto; /* Adjust height dynamically */
-    max-width: 100%; /* Avoid overflowing on small screens */
-  }
 }
 
