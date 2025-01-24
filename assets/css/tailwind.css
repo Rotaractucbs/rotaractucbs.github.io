@@ -3169,14 +3169,10 @@ body {
   .text-content p {
     font-size: 1rem; /* Adjust paragraph size */
   }
-}
-html, body {
-  overflow-x: hidden; /* Prevent horizontal scroll */
-  height: 100%;
+  .swiper-container {
+    width: 100%; /* Ensure it takes full width */
+    height: auto; /* Adjust height dynamically */
+    max-width: 100%; /* Avoid overflowing on small screens */
+  }
 }
 
-.swiper-container {
-  width: 100%; /* Ensure it takes full width */
-  height: auto; /* Adjust height dynamically */
-  max-width: 100%; /* Avoid overflowing on small screens */
-}
