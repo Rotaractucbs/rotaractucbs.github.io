@@ -415,5 +415,22 @@ var swiper = new Swiper('.swiper-container', {
   autoplay: {
     delay: 5000, // Autoplay every 5 seconds
   },
+  breakpoints: {
+    // Mobile screens
+    0: {
+      slidesPerView: 1,
+      spaceBetween: 10,
+    },
+    // Tablets
+    768: {
+      slidesPerView: 1,
+      spaceBetween: 15,
+    },
+    // Desktop
+    1024: {
+      slidesPerView: 1,
+      spaceBetween: 20,
+    },
+  },
 });
 
