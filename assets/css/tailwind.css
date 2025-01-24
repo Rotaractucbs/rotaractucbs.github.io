@@ -3060,6 +3060,7 @@ body {
     padding: 60px;
   }
 }
+/* Swiper Button Styling */
 .swiper-button-next, .swiper-button-prev {
   color: white;
   transition: color 0.3s ease;
@@ -3067,6 +3068,8 @@ body {
 .swiper-button-next:hover, .swiper-button-prev:hover {
   color: #ffd700; /* Golden color */
 }
+
+/* Swiper Pagination Styling */
 .swiper-pagination-bullet {
   background: rgba(255, 255, 255, 0.6);
 }
@@ -3132,54 +3135,16 @@ body {
   margin-top: 5px;
 }
 
-/* Responsive Styling for Tablet and Mobile Screens */
-@media (max-width: 1024px) {
-  /* For tablets */
-  .text-content {
-    padding: 12px;
-    bottom: 15px; /* Slightly reduce space from bottom */
-    left: 15px; /* Slightly reduce space from left */
-  }
-
-  .text-content h1 {
-    font-size: 2rem; /* Smaller heading for tablets */
-  }
-
-  .text-content p {
-    font-size: 1.3rem; /* Smaller paragraph for tablets */
-  }
+/* Responsive Styling */
+.text-content {
+  bottom: 20px; /* Consistent positioning */
+  left: 20px; /* Consistent positioning */
 }
 
-@media (max-width: 768px) {
-  /* For smaller tablets and larger mobile devices */
-  .text-content {
-    padding: 10px;
-    bottom: 10px; /* Reduce space from bottom */
-    left: 10px; /* Reduce space from left */
-  }
-
-  .text-content h1 {
-    font-size: 1.7rem; /* Even smaller heading for small tablets and large mobiles */
-  }
-
-  .text-content p {
-    font-size: 1.2rem; /* Even smaller paragraph for small tablets and large mobiles */
-  }
+.text-content h1 {
+  font-size: 2rem; /* Adjusted for responsiveness */
 }
 
-@media (max-width: 480px) {
-  /* For mobile devices */
-  .text-content {
-    padding: 8px;
-    bottom: 5px; /* Further reduce space from the bottom */
-    left: 5px; /* Further reduce space from the left */
-  }
-
-  .text-content h1 {
-    font-size: 1.5rem; /* Smaller heading for mobile */
-  }
-
-  .text-content p {
-    font-size: 1rem; /* Smaller paragraph for mobile */
-  }
+.text-content p {
+  font-size: 1.2rem; /* Adjusted for responsiveness */
 }
