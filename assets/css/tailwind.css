@@ -3066,7 +3066,7 @@ body {
   transition: color 0.3s ease;
 }
 .swiper-button-next:hover, .swiper-button-prev:hover {
-  color: white; /* Golden color */
+  color: gold; /* Golden color */
 }
 
 /* Swiper Pagination Styling */
@@ -3149,27 +3149,48 @@ body {
   font-size: 1.2rem; /* Adjusted for responsiveness */
 }
 
-/* Responsive adjustments for mobile */
+/* Mobile-Specific Styling */
 @media (max-width: 768px) {
+  .responsive-image {
+    object-fit: contain; /* Adjusts image size */
+  }
   .swiper-container {
-    height: 60vh; /* Reduce height for mobile screens */
+    height: 100vh; /* Full screen height for mobile devices */
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
-  .text-content {
-    bottom: 10px; /* Adjust positioning */
-    left: 10px;
-    padding: 10px;
-    max-width: 80%; /* Ensure text doesn't overflow */
+  .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Hides overflow for clean edges */
   }
 
-  .text-content h1 {
-    font-size: 1.5rem; /* Adjust heading size */
+  .logo {
+    display: none; /* Hide default image for mobile */
   }
 
-  .text-content p {
-    font-size: 1rem; /* Adjust paragraph size */
+  .mobile-logo {
+    display: block; /* Show custom image for mobile */
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image fills the container on mobile */
+    aspect-ratio: 16/9; /* Adds an aspect ratio for uniformity */
+    border-radius: 12px; /* Optional: Adds a rounded effect */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Optional: Adds subtle shadow for aesthetics */
   }
 }
+
+/* Default for larger screens */
+.logo {
+  display: block;
+}
+.mobile-logo {
+  display: none; /* Hide mobile-specific image on desktop */
+}
+
 
 /* Custom Scrollbar */
 ::-webkit-scrollbar {

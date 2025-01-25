@@ -402,37 +402,111 @@ if (selectTyped) {
     backDelay: 2000
   });
 }
-var swiper = new Swiper('.swiper-container', {
-  loop: true, // Infinite loop
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-  pagination: {
-    el: '.swiper-pagination',
-    clickable: true,
-  },
-  autoplay: {
-    delay: 5000, // Autoplay every 5 seconds
-  },
-  breakpoints: {
-    // Mobile screens
-    0: {
-      slidesPerView: 1,
-      spaceBetween: 10,
+document.addEventListener("DOMContentLoaded", function () {
+  // Initialize Swiper
+  const swiper = new Swiper('.swiper-container', {
+    loop: true, // Allows infinite loop of slides
+    slidesPerView: 1, // Number of slides to show at a time
+    spaceBetween: 10, // Space between slides
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev'
     },
-    // Tablets
-    768: {
-      slidesPerView: 1,
-      spaceBetween: 15,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true
     },
-    // Desktop
-    1024: {
-      slidesPerView: 1,
-      spaceBetween: 20,
-    },
-  },
+    autoplay: {
+      delay: 3000, // Time between slide transitions (in milliseconds)
+      disableOnInteraction: false // Keeps autoplay running after interaction
+    }
+  });
+
+  // Function to change the image source for mobile devices for all slides
+  function changeImagesForMobile() {
+    // Slide 1
+    const slide1Image = document.querySelector('#slide-image-1');
+    if (slide1Image) {
+      if (window.innerWidth <= 768) {
+        slide1Image.src = './assets/images/photos/49.jpg'; // Mobile image for Slide 1
+      } else {
+        slide1Image.src = './assets/images/photos/49.jpg'; // Default image for Slide 1
+      }
+    }
+
+    // Slide 2
+    const slide2Image = document.querySelector('.slide-2 img');
+    if (slide2Image) {
+      if (window.innerWidth <= 768) {
+        slide2Image.src = './assets/images/photos/22.jpg'; // Mobile image for Slide 2
+      } else {
+        slide2Image.src = './assets/images/photos/22.jpg'; // Default image for Slide 2
+      }
+    }
+
+    // Slide 3
+    const slide3Image = document.querySelector('.slide-3 img');
+    if (slide3Image) {
+      if (window.innerWidth <= 768) {
+        slide3Image.src = './assets/images/photos/28.jpg'; // Mobile image for Slide 3
+      } else {
+        slide3Image.src = './assets/images/photos/28.jpg'; // Default image for Slide 3
+      }
+    }
+
+    // Slide 4
+    const slide4Image = document.querySelector('.slide-4 img');
+    if (slide4Image) {
+      if (window.innerWidth <= 768) {
+        slide4Image.src = './assets/images/photos/12.jpg'; // Mobile image for Slide 4
+      } else {
+        slide4Image.src = './assets/images/photos/42.jpg'; // Default image for Slide 4
+      }
+    }
+
+    // Slide 5
+    const slide5Image = document.querySelector('.slide-5 img');
+    if (slide5Image) {
+      if (window.innerWidth <= 768) {
+        slide5Image.src = './assets/images/photos/34.jpg'; // Mobile image for Slide 5
+      } else {
+        slide5Image.src = './assets/images/Blogs/leh1.jpg'; // Default image for Slide 5
+      }
+    }
+
+    // Slide 6
+    const slide6Image = document.querySelector('.slide-6 img');
+    if (slide6Image) {
+      if (window.innerWidth <= 768) {
+        slide6Image.src = './assets/images/photos/53.1.jpg'; // Mobile image for Slide 6
+      } else {
+        slide6Image.src = './assets/images/Blogs/Blood1.jpg'; // Default image for Slide 6
+      }
+    }
+
+    // Slide 7
+    const slide7Image = document.querySelector('.slide-7 img');
+    if (slide7Image) {
+      if (window.innerWidth <= 768) {
+        slide7Image.src = './assets/images/photos/39.jpg'; // Mobile image for Slide 7
+      } else {
+        slide7Image.src = './assets/images/photos/31.jpg'; // Default image for Slide 7
+      }
+    }
+  }
+
+  // Initial run of the function to set the correct images
+  changeImagesForMobile();
+
+  // Run the function on window resize to update the images when changing screen sizes
+  window.addEventListener('resize', changeImagesForMobile);
+
 });
+
+
+
+
+
 
 window.addEventListener("load", function () {
   // Initialize Lottie animation for preloader
