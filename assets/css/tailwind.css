@@ -3134,7 +3134,7 @@ body {
   /* Position 20px from the bottom */
   left: 20px;
   /* Position 20px from the left */
-
+  background-color: rgba(0, 123, 255, 0.7);
   /* Semi-transparent background */
   padding: 15px;
   border-radius: 10px;
