@@ -3195,7 +3195,7 @@ body {
   }
 
   .swiper-container {
-    height: 100vh;
+    height: 95vh;
     /* Full screen height for mobile devices */
     display: flex;
     justify-content: center;
