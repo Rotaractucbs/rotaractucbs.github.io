@@ -447,7 +447,6 @@ window.addEventListener("load", function () {
   // Hide the preloader and show the main content once the page is fully loaded
   setTimeout(function () {
       document.getElementById("loader-wrapper").style.display = "none";
-      document.getElementById("main-content").style.display = "flex";
-  }, 2000); // Adjust the time as necessary based on your animation duration
+        }, 2000); // Adjust the time as necessary based on your animation duration
 });
 
