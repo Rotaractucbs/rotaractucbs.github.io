@@ -3102,6 +3102,7 @@ body {
   /* Required for positioning children */
   overflow: hidden;
   /* Hide overflowed content */
+  padding-top: 70px;
 }
 
 /* Swiper Slide Style */
