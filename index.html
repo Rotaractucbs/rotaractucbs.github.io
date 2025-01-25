@@ -34,6 +34,7 @@
       });
     })();
   </script>
+
 </head>
 
 <body">
@@ -43,7 +44,10 @@
     <div class="loader" id="lottie-loader"></div>
   </div>
   <!-- ====== Navbar Section Start -->
-  <div class="absolute top-0 left-0 z-40 flex items-center w-full bg-transparent ud-header" style="height: 70px;">
+  <div
+    class="absolute top-0 left-0 z-40 flex items-center w-full bg-transparent dark:bg-gray-800 ud-header bg-gray-1 dark:bg-dark-2"
+    style="height: 70px;">
+
     <div class="container">
       <div class="relative flex items-center justify-between -mx-4">
         <div class="max-w-full px-4 w-60">
@@ -1766,71 +1770,61 @@
   <script src="assets/js/swiper-bundle.min.js"></script>
   <script src="assets/js/main.js"></script>
   <script>
-    // ==== for menu scroll
+    // ==== Smooth Scroll for Menu ====
     const pageLink = document.querySelectorAll(".ud-menu-scroll");
 
     pageLink.forEach((elem) => {
       elem.addEventListener("click", (e) => {
         e.preventDefault();
+        // Scroll to the target section with smooth behavior
         document.querySelector(elem.getAttribute("href")).scrollIntoView({
           behavior: "smooth",
-          offsetTop: 1 - 60,
+          block: "start",
         });
       });
     });
 
-    // section menu active
-function onScroll(event) {
-  const sections = document.querySelectorAll(".ud-menu-scroll");
-  const scrollPos =
-    window.pageYOffset ||
-    document.documentElement.scrollTop ||
-    document.body.scrollTop;
+    // ==== Active Menu Item on Scroll ====
+    function onScroll(event) {
+      const sections = document.querySelectorAll(".ud-menu-scroll");
+      const scrollPos = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop;
 
-  for (let i = 0; i < sections.length; i++) {
-    const currLink = sections[i];
-    const val = currLink.getAttribute("href");
+      sections.forEach((currLink) => {
+        const val = currLink.getAttribute("href");
 
-    // Skip if href is invalid or points to 'javascript:void(0)'
-    if (!val || val === "javascript:void(0)") {
-      continue; // Skip this iteration
+        // Skip invalid href or 'javascript:void(0)' links
+        if (!val || val === "javascript:void(0)") {
+          return;
+        }
+
+        const refElement = document.querySelector(val);
+        if (refElement) {
+          const headerHeight = document.querySelector(".ud-header") ? document.querySelector(".ud-header").offsetHeight : 0;
+          const scrollTopMinus = scrollPos + headerHeight;
+
+          if (refElement.offsetTop <= scrollTopMinus && refElement.offsetTop + refElement.offsetHeight > scrollTopMinus) {
+            // Remove 'active' class from other menu items
+            document.querySelector(".ud-menu-scroll.active")?.classList.remove("active");
+            // Add 'active' class to current section's link
+            currLink.classList.add("active");
+          } else {
+            currLink.classList.remove("active");
+          }
+        }
+      });
     }
-
-    const refElement = document.querySelector(val);
-    if (refElement) {
-      const scrollTopMinus = scrollPos + 73;
-      if (
-        refElement.offsetTop <= scrollTopMinus &&
-        refElement.offsetTop + refElement.offsetHeight > scrollTopMinus
-      ) {
-        // Remove 'active' class from all menu items
-        document
-          .querySelector(".ud-menu-scroll.active")
-          ?.classList.remove("active");
-
-        // Add 'active' class to the current menu item
-        currLink.classList.add("active");
-      } else {
-        currLink.classList.remove("active");
-      }
-    }
-  }
-}
-
 
     window.document.addEventListener("scroll", onScroll);
 
-    // Testimonial
+    // ==== Testimonial Swiper Initialization ====
     const testimonialSwiper = new Swiper(".testimonial-carousel", {
       slidesPerView: 1,
       spaceBetween: 30,
-
       // Navigation arrows
       navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
       },
-
       breakpoints: {
         640: {
           slidesPerView: 2,
@@ -1847,6 +1841,7 @@ function onScroll(event) {
       },
     });
   </script>
-</body>
+
+  </body>
 
 </html>
