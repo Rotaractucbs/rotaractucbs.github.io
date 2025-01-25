@@ -511,16 +511,16 @@ document.addEventListener("DOMContentLoaded", function () {
 window.addEventListener("load", function () {
   // Initialize Lottie animation for preloader
   var animation = lottie.loadAnimation({
-      container: document.getElementById('lottie-loader'), // The container where the animation will go
-      renderer: 'svg', // Renderer type
-      loop: true, // Loop the animation
-      autoplay: true, // Play the animation automatically
-      path: '../../src/Animation.json' // Path to your Lottie JSON file
+    container: document.getElementById('lottie-loader'), // The container where the animation will go
+    renderer: 'svg', // Renderer type
+    loop: true, // Loop the animation
+    autoplay: true, // Play the animation automatically
+    path: '../../src/Animation.json' // Path to your Lottie JSON file
   });
 
   // Hide the preloader and show the main content once the page is fully loaded
   setTimeout(function () {
-      document.getElementById("loader-wrapper").style.display = "none";
-        }, 2000); // Adjust the time as necessary based on your animation duration
+    document.getElementById("loader-wrapper").style.display = "none";
+  }, 2000); // Adjust the time as necessary based on your animation duration
 });
 
