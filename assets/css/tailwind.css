@@ -1413,11 +1413,6 @@ body {
   background-color: rgb(55 88 249 / 0.08);
 }
 
-.bg-nav {
-  background-color: rgba(0, 123, 255, 0.7);
-  /* Semi-transparent background */
-}
-
 .bg-secondary {
   --tw-bg-opacity: 1;
   background-color: rgb(19 194 150 / var(--tw-bg-opacity));
