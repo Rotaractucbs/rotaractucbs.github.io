@@ -230,91 +230,98 @@ document.addEventListener('DOMContentLoaded', function () {
     },
     {
       title: 'Installation Ceremony of Rtr. Rijul Sen',
-      image: '../../assets/images/Blogs/installation1.jpg',
+      image: '../../assets/images/Projects/installation1.jpg',
       date: 'Sep 25, 2024',
       description: 'Rotaract Club UCBS celebrated the installation of Rtr. Rijul Sen as President for 2024-25! 🎉 The ceremony, held at Rotary Town Hall, Shimla, was graced by esteemed guests, including DRR Rtr. Shashank Kaushik and Rtn. Maala Singh. 🤝 Rtr. Rijul Sen and Rtr. Ayush Sharma were sworn in as President and Secretary, respectively. 💼 The event was a testament to the clubs commitment to service and leadership. 💪',
       link: 'javascript:void(0)'
     },
     {
       title: 'Trip to Leh Ladakh',
-      image: '../../assets/images/Blogs/leh1.jpg',
+      image: '../../assets/images/Projects/leh1.jpg',
       date: 'Sep 13, 2024',
       description: 'The Rotaract Club of UCBS embarked on an unforgettable adventure through the breathtaking landscapes of Leh-Ladakh! 🏔️ From the majestic Khardung La Pass to the serene Pangong Lake, they explored stunning vistas and embraced the spirit of adventure. 🏕️ Along the way, they promoted environmental awareness and supported local communities, making a positive impact. 🌍 This journey was not just about exploration but also about fostering strong bonds and creating lifelong memories. 🤝❤️',
       link: 'javascript:void(0)'
     },
     {
       title: 'Pinning Ceremony Of BODs 2024-25',
-      image: '../../assets/images/Blogs/pinning1.jpg',
+      image: '../../assets/images/Projects/pinning1.jpg',
       date: 'Sep 03, 2024',
       description: 'Rotaract Club UCBS celebrated the induction of its new leadership team at a pinning ceremony held at Rotary Town Hall, Shimla. 🎉 The event honored the commitment of the new board members to service, integrity, and fellowship. 🤝 With the pinning of the official Rotaract badge, the club welcomed a new era of leadership and community impact.',
       link: 'javascript:void(0)'
     },
     {
       title: 'A Day of Joy and Care for Our Furry Friends',
-      image: '../../assets/images/Blogs/dog1.jpg',
+      image: '../../assets/images/Projects/dog1.jpg',
       date: 'Aug 25, 2024',
       description: 'Rotaract UCBS marked International Dog Day with a heartwarming event dedicated to our beloved street dogs. We organized a special feeding drive, providing nutritious meals and essential supplies to these furry companions. Lets spread love and compassion for all creatures, big and small. 🐾',
       link: 'javascript:void(0)'
     },
     {
+      title: 'District Assembly of DRR Rtr. Shashank Kaushik (3080)',
+      image: '../../assets/images/photos/DE2.jpg',
+      date: 'Aug 24, 2024',
+      description: 'The installation ceremony “Sharanga” marked the ascension of Rtr. Shashank Kaushik to the esteemed position of District Rotaract Representative (DRR). This vibrant event featured the ceremonial collaring of the new DRR, symbolizing his induction into office.',
+      link: 'javascript:void(0)'
+    },
+    {
       title: 'Candle March for Justice',
-      image: '../../assets/images/Blogs/candle1.jpg',
+      image: '../../assets/images/Projects/candle1.jpg',
       date: 'Aug 20, 2023',
       description: 'We joined a solemn candle march with fellow Rotaract and Rotary members, along with other NGOs, at Mall Road, Shimla, to express our deep sorrow and outrage over the tragic incident in Kolkata. We stand united in solidarity with the victims family and call for a thorough investigation and swift justice. Lets work together to create a safer and more compassionate society. 🕯️💔',
       link: 'javascript:void(0)'
     },
     {
       title: 'World Photography Day Competition',
-      image: './assets/images/Blogs/competition.jpg',
+      image: './assets/images/Projects/competition.jpg',
       date: 'Aug 19, 2024',
       description: 'Rotaract UCBS organized a captivating photography competition to celebrate World Photography Day. The event showcased the incredible talent of our members, as they captured the beauty and diversity of life through their lenses. From stunning landscapes to heartwarming portraits, the competition showcased the power of photography to inspire and connect. 📸🌟',
       link: 'javascript:void(0)'
     },
     {
       title: 'Rakhi Celebration with Governor, Army and Police',
-      image: '../../assets/images/Blogs/rakhi3.jpg',
+      image: '../../assets/images/Projects/rakhi3.jpg',
       date: 'Aug 18, 2023',
       description: 'We celebrated Raksha Bandhan by organizing a special Rakhi distribution ceremony with the esteemed Governor of Himachal Pradesh, along with brave Army personnel and dedicated Police officers. By tying over 70 Rakhis, we strengthened the bond of brotherhood and celebrated the spirit of unity and patriotism. 🇮🇳❤️',
       link: 'javascript:void(0)'
     },
     {
       title: 'Cow Shelter Visit on Independence Day',
-      image: './assets/images/Blogs/cow1.jpg',
+      image: './assets/images/Projects/cow1.jpg',
       date: 'Aug 15, 2024',
       description: 'This Independence Day, we chose to celebrate by giving back to our community. We visited a local cow shelter and extended a helping hand to these gentle creatures. By donating essential supplies and spending quality time with them, we experienced a sense of fulfillment and gratitude. Its a small step, but its a step towards a more compassionate and sustainable future. 🐮🙏',
       link: 'javascript:void(0)'
     },
     {
       title: ' Blood Donation Drive at Police Ground, Junga',
-      image: './assets/images/Blogs/blood2.jpg',
+      image: './assets/images/Projects/blood2.jpg',
       date: 'Aug 07, 2024',
       description: 'Rotary Club Shimla HillQueens, in collaboration with Himachal Pradesh Armed Police 1st Battalion Junga, successfully organized a blood donation camp despite challenging weather. 🩸💪 Over 30 units of blood were collected and donated to IGMC Hospital Shimla blood bank. 🏥 The event was made possible by the support of Mr. Rohit Malpani IPS and Deputy Commandant Babita Rana. 🤝',
       link: 'javascript:void(0)'
     },
     {
       title: 'Igniting Leadership: Rotaract UCBS Engages in Leadership Training',
-      image: './assets/images/Blogs/ltp1.jpg',
+      image: './assets/images/Projects/ltp1.jpg',
       date: 'July 21, 2024',
       description: 'The Rotaract Club of UCBS recently participated in District 3080’s Leadership Training Programme (LTP). This transformative event, designed to empower and inspire future leaders, provided Rotaract members with valuable insights, skills, and networking opportunities. Through engaging workshops, inspiring talks, and interactive sessions, participants gained a deeper understanding of leadership principles, effective communication, and community service.  🚀',
       link: 'javascript:void(0)'
     },
     {
       title: 'Green Tomorrow: Tree Plantation at Ava Lodge',
-      image: './assets/images/Blogs/tree1.jpg',
+      image: './assets/images/Projects/tree1.jpg',
       date: 'July 02, 2024',
       description: 'Rotaract Club UCBS took a significant step towards a greener future by organizing a tree plantation drive at Ava Lodge, Chaura Maidan, Shimla. The initiative aimed to enhance environmental sustainability by planting over 50 trees and flowers, which contribute to cleaner air, soil conservation, and biodiversity. 🌳🌎',
       link: 'javascript:void(0)'
     },
     {
       title: '🎉 Charter Presentation of Rotaract Club of UCBS by District Governor 🎓',
-      image: './assets/images/Blogs/dg.jpg',
+      image: './assets/images/Projects/dg.jpg',
       date: 'May 17, 2024',
       description: 'The official visit of District Governor Rtn. Arun Mongia to RCS Hill Queens marked a significant milestone with the formal pinning and charter presentation of the newly formed Rotaract Club of UCBS. 🌟 The ceremony was graced by the First Lady of the District, Rtn. Charu Mongia, and Assistant Governor CA/Rtn. Rohit Karol, emphasizing Rotarys commitment to empowering youth and fostering leadership. 💡✨ This memorable occasion celebrated the induction of this vibrant new club into the Rotary family, inspiring future initiatives and collaborations. 🤝🎊',
       link: 'javascript:void(0)'
     },
     {
       title: 'Blood Donation Camp at The Ridge, Shimla',
-      image: './assets/images/Blogs/Blood1.jpg',
+      image: './assets/images/Projects/Blood1.jpg',
       date: 'May 01, 2024',
       description: 'Rotary Club Shimla Hill Queens, in collaboration with Rotaract Club UCBS and Kamla Nehru State Hospital Blood Bank, organized a successful blood donation camp at the historic Ridge on May 1st. The camp aimed to address the urgent need for blood donations and collected 56 units of blood from 70 generous donors. 🩸❤️',
       link: 'javascript:void(0)'
@@ -339,7 +346,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   ];
 
-  function updateBlogSection(content) {
+  function updateProjectsection(content) {
     content.forEach((item, index) => {
       const blogElement = document.querySelector(`.blog-item:nth-child(${index + 1})`);
       if (blogElement) {
@@ -359,11 +366,11 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   // Call the function to update blog content
-  updateBlogSection(blogContent);
+  updateProjectsection(blogContent);
 
 
 
-  function updateFooterBlogs(blogContent) {
+  function updateFooterProjects(blogContent) {
     blogContent.forEach((blog, index) => {
       const imgElement = document.querySelector(`#footer-blog${index + 1}-img`);
       const titleElement = document.querySelector(`#footer-blog${index + 1}-title`);
@@ -379,11 +386,11 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   // Update Blog Section
-  updateBlogSection(blogContent);
+  updateProjectsection(blogContent);
 
   // Update Footer Blog Section
   if (document.querySelector('#footer-blog1-img')) {
-    updateFooterBlogs(footerBlogContent);
+    updateFooterProjects(footerBlogContent);
   }
 });
 
@@ -470,7 +477,7 @@ document.addEventListener("DOMContentLoaded", function () {
       if (window.innerWidth <= 768) {
         slide5Image.src = './assets/images/photos/34.jpg'; // Mobile image for Slide 5
       } else {
-        slide5Image.src = './assets/images/Blogs/leh1.jpg'; // Default image for Slide 5
+        slide5Image.src = './assets/images/Projects/leh1.jpg'; // Default image for Slide 5
       }
     }
 
@@ -480,7 +487,7 @@ document.addEventListener("DOMContentLoaded", function () {
       if (window.innerWidth <= 768) {
         slide6Image.src = './assets/images/photos/53.1.jpg'; // Mobile image for Slide 6
       } else {
-        slide6Image.src = './assets/images/Blogs/Blood1.jpg'; // Default image for Slide 6
+        slide6Image.src = './assets/images/Projects/Blood1.jpg'; // Default image for Slide 6
       }
     }
 
