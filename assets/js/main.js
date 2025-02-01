@@ -428,7 +428,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const slide1Image = document.querySelector('#slide-image-1');
     if (slide1Image) {
       if (window.innerWidth <= 768) {
-        slide1Image.src = './assets/images/photos/49.jpg'; // Mobile image for Slide 1
+        slide1Image.src = './assets/images/photos/32.jpg'; // Mobile image for Slide 1
       } else {
         slide1Image.src = './assets/images/photos/49.jpg'; // Default image for Slide 1
       }
@@ -448,7 +448,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const slide3Image = document.querySelector('.slide-3 img');
     if (slide3Image) {
       if (window.innerWidth <= 768) {
-        slide3Image.src = './assets/images/photos/28.jpg'; // Mobile image for Slide 3
+        slide3Image.src = './assets/images/photos/23.jpg'; // Mobile image for Slide 3
       } else {
         slide3Image.src = './assets/images/photos/28.jpg'; // Default image for Slide 3
       }
