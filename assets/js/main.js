@@ -324,7 +324,7 @@ document.addEventListener('DOMContentLoaded', function () {
       image: './assets/images/Projects/Blood1.jpg',
       date: 'May 01, 2024',
       description: 'Rotary Club Shimla Hill Queens, in collaboration with Rotaract Club UCBS and Kamla Nehru State Hospital Blood Bank, organized a successful blood donation camp at the historic Ridge on May 1st. The camp aimed to address the urgent need for blood donations and collected 56 units of blood from 70 generous donors. 🩸❤️',
-      link: 'javascript:void(0)'
+      link: '../../BloodDonationRidge.html'
     }
 
   ];
