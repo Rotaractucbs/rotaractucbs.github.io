@@ -237,7 +237,7 @@ document.addEventListener('DOMContentLoaded', function () {
     },
     {
       title: 'Integrated social service from distant mode',
-      image: '../../assets/images/photos/mt.jpg',
+      image: '../../assets/images/photos/MT.jpg',
       date: 'OCT 20, 2024',
       description: 'One of the key inspirations for the event was the concept of leadership through service. Members shared stories of their previous projects, highlighting the positive impact they had on their local communities. The energy in the room was palpable as they discussed their vision for the future and the ways they plan to empower others.',
       link: 'javascript:void(0)'
