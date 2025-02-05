@@ -208,6 +208,13 @@ document.addEventListener('DOMContentLoaded', function () {
   // Blog Content
   const blogContent = [
     {
+      title: '📸 Photography Competition 2025 🌿',
+      image: '../../assets/images/photos/PC.jpg',
+      date: 'Jan 19, 2025',
+      description: ' The Photography Competition 2025 was organized to celebrate creativity and passion for photography. Participants were invited to showcase their best unedited nature-themed photographs, capturing the beauty of sky, forests, rural areas, water bodies, and more. The competition aimed to highlight unique perspectives of nature through the lens of talented photographers.',
+      link: 'javascript:void(0)'
+    },
+    {
       title: 'Project WASH: Promoting Health Through Clean Water and Hygiene!',
       image: '../../assets/images/photos/55.jpg',
       date: 'Dec 13, 2024',
