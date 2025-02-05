@@ -236,6 +236,13 @@ document.addEventListener('DOMContentLoaded', function () {
       link: 'https://fb.watch/wL_7Bj9LI6/'
     },
     {
+      title: 'Ripple of kindness',
+      image: '../../assets/images/Photos/RK.png',
+      date: 'Sep 25, 2024',
+      description: 'Spreading kindness ripple by ripple—after our first installation ceremony, we donated food to those in need, sharing love and support with the underprivileged.',
+      link: 'javascript:void(0)'
+    },
+    {
       title: 'Installation Ceremony of Rtr. Rijul Sen',
       image: '../../assets/images/Projects/installation1.jpg',
       date: 'Sep 25, 2024',
