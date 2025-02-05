@@ -236,6 +236,13 @@ document.addEventListener('DOMContentLoaded', function () {
       link: 'https://fb.watch/wL_7Bj9LI6/'
     },
     {
+      title: 'Integrated social service from distant mode',
+      image: '../../assets/images/photos/mt.jpg',
+      date: 'OCT 20, 2024',
+      description: 'One of the key inspirations for the event was the concept of leadership through service. Members shared stories of their previous projects, highlighting the positive impact they had on their local communities. The energy in the room was palpable as they discussed their vision for the future and the ways they plan to empower others.',
+      link: 'javascript:void(0)'
+    },
+    {
       title: 'Ripple of kindness',
       image: '../../assets/images/Photos/RK.png',
       date: 'Sep 25, 2024',
