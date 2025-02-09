@@ -3158,3 +3158,10 @@ body {
 .swiper-pagination-bullet-active {
   background: white;
 }
+
+@media (max-width: 768px) {
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: none !important;
+  }
+}
