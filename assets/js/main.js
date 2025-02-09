@@ -415,140 +415,69 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 });
 
-/**
- * Init typed.js
- */
-const selectTyped = document.querySelector('.typed');
-if (selectTyped) {
-  let typed_strings = selectTyped.getAttribute('data-typed-items');
-  typed_strings = typed_strings.split(',');
-  new Typed('.typed', {
-    strings: typed_strings,
-    loop: true,
-    typeSpeed: 100,
-    backSpeed: 50,
-    backDelay: 2000
-  });
-}
+
+
 document.addEventListener("DOMContentLoaded", function () {
+  // Initialize WOW.js
+  new WOW().init();
+
   // Initialize Swiper
-  const swiper = new Swiper('.swiper-container', {
-    loop: true, // Allows infinite loop of slides
-    slidesPerView: 1, // Number of slides to show at a time
-    spaceBetween: 10, // Space between slides
+  var swiper = new Swiper(".swiper-container", {
+    loop: true,
     navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev'
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
     },
     pagination: {
-      el: '.swiper-pagination',
-      clickable: true
+      el: ".swiper-pagination",
+      clickable: true,
     },
     autoplay: {
-      delay: 3000, // Time between slide transitions (in milliseconds)
-      disableOnInteraction: false // Keeps autoplay running after interaction
-    }
+      delay: 5000,
+      disableOnInteraction: false,
+    },
+    effect: "fade",
+    fadeEffect: {
+      crossFade: true,
+    },
+    speed: 800,
   });
 
-  // Function to change the image source for mobile devices for all slides
-  function changeImagesForMobile() {
-    // Slide 1
-    const slide1Image = document.querySelector('#slide-image-1');
-    if (slide1Image) {
-      if (window.innerWidth <= 768) {
-        slide1Image.src = './assets/images/photos/32.jpg'; // Mobile image for Slide 1
+  // Enhanced Typed Text Effect
+  var typedElements = document.querySelectorAll(".typed");
+
+  typedElements.forEach((el) => {
+    var typedItems = el.getAttribute("data-typed-items").split(", ");
+    var typedIndex = 0;
+    var charIndex = 0;
+    var isDeleting = false;
+    var typingSpeed = 100;
+    var pauseTime = 2000;
+
+    function typeText() {
+      let currentWord = typedItems[typedIndex];
+
+      if (isDeleting) {
+        el.textContent = currentWord.substring(0, charIndex--);
       } else {
-        slide1Image.src = './assets/images/photos/49.jpg'; // Default image for Slide 1
+        el.textContent = currentWord.substring(0, charIndex++);
       }
+
+      let currentSpeed = isDeleting ? typingSpeed / 2 : typingSpeed;
+
+      if (!isDeleting && charIndex === currentWord.length + 1) {
+        isDeleting = true;
+        currentSpeed = pauseTime;
+      } else if (isDeleting && charIndex === 0) {
+        isDeleting = false;
+        typedIndex = (typedIndex + 1) % typedItems.length;
+        currentSpeed = 500;
+      }
+
+      setTimeout(typeText, currentSpeed);
     }
 
-    // Slide 2
-    const slide2Image = document.querySelector('.slide-2 img');
-    if (slide2Image) {
-      if (window.innerWidth <= 768) {
-        slide2Image.src = './assets/images/photos/22.jpg'; // Mobile image for Slide 2
-      } else {
-        slide2Image.src = './assets/images/photos/22.jpg'; // Default image for Slide 2
-      }
-    }
-
-    // Slide 3
-    const slide3Image = document.querySelector('.slide-3 img');
-    if (slide3Image) {
-      if (window.innerWidth <= 768) {
-        slide3Image.src = './assets/images/photos/23.jpg'; // Mobile image for Slide 3
-      } else {
-        slide3Image.src = './assets/images/photos/28.jpg'; // Default image for Slide 3
-      }
-    }
-
-    // Slide 4
-    const slide4Image = document.querySelector('.slide-4 img');
-    if (slide4Image) {
-      if (window.innerWidth <= 768) {
-        slide4Image.src = './assets/images/photos/12.jpg'; // Mobile image for Slide 4
-      } else {
-        slide4Image.src = './assets/images/photos/42.jpg'; // Default image for Slide 4
-      }
-    }
-
-    // Slide 5
-    const slide5Image = document.querySelector('.slide-5 img');
-    if (slide5Image) {
-      if (window.innerWidth <= 768) {
-        slide5Image.src = './assets/images/photos/34.jpg'; // Mobile image for Slide 5
-      } else {
-        slide5Image.src = './assets/images/Projects/leh1.jpg'; // Default image for Slide 5
-      }
-    }
-
-    // Slide 6
-    const slide6Image = document.querySelector('.slide-6 img');
-    if (slide6Image) {
-      if (window.innerWidth <= 768) {
-        slide6Image.src = './assets/images/photos/53.1.jpg'; // Mobile image for Slide 6
-      } else {
-        slide6Image.src = './assets/images/Projects/Blood1.jpg'; // Default image for Slide 6
-      }
-    }
-
-    // Slide 7
-    const slide7Image = document.querySelector('.slide-7 img');
-    if (slide7Image) {
-      if (window.innerWidth <= 768) {
-        slide7Image.src = './assets/images/photos/39.jpg'; // Mobile image for Slide 7
-      } else {
-        slide7Image.src = './assets/images/photos/31.jpg'; // Default image for Slide 7
-      }
-    }
-  }
-
-  // Initial run of the function to set the correct images
-  changeImagesForMobile();
-
-  // Run the function on window resize to update the images when changing screen sizes
-  window.addEventListener('resize', changeImagesForMobile);
-
-});
-
-
-
-
-
-
-window.addEventListener("load", function () {
-  // Initialize Lottie animation for preloader
-  var animation = lottie.loadAnimation({
-    container: document.getElementById('lottie-loader'), // The container where the animation will go
-    renderer: 'svg', // Renderer type
-    loop: true, // Loop the animation
-    autoplay: true, // Play the animation automatically
-    path: '../../src/Animation.json' // Path to your Lottie JSON file
+    typeText();
   });
-
-  // Hide the preloader and show the main content once the page is fully loaded
-  setTimeout(function () {
-    document.getElementById("loader-wrapper").style.display = "none";
-  }, 2000); // Adjust the time as necessary based on your animation duration
 });
 

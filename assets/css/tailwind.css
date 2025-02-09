@@ -3078,167 +3078,6 @@ body {
     /* Golden color */
 }
 
-/* Swiper Pagination Styling */
-.swiper-pagination-bullet {
-  background: rgba(255, 255, 255, 0.6);
-}
-
-.swiper-pagination-bullet-active {
-  background: #ffffff;
-}
-
-/* Full-Screen Swiper Container */
-.swiper-container {
-  width: 100vw;
-  /* Full width of the viewport */
-  height: 100vh;
-  /* Full height of the viewport */
-  position: relative;
-  /* Required for positioning children */
-  overflow: hidden;
-  /* Hide overflowed content */
-  padding-top: 70px;
-}
-
-/* Swiper Slide Style */
-.swiper-slide {
-  position: relative;
-  height: 100%;
-  /* Full height */
-  width: 100%;
-  /* Full width */
-}
-
-/* Ensure the image covers the entire screen */
-.logo {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  /* Cover the whole area */
-  z-index: -1;
-  /* Keep image in the background */
-}
-
-/* Text Content Styling */
-.text-content {
-  position: absolute;
-  bottom: 20px;
-  /* Position 20px from the bottom */
-  left: 20px;
-  /* Position 20px from the left */
-  background-color: rgba(0, 123, 255, 0.7);
-  /* Semi-transparent background */
-  padding: 15px;
-  border-radius: 10px;
-  z-index: 1;
-  /* Text should be on top of the image */
-  max-width: 90%;
-  /* Limit text width */
-  word-wrap: break-word;
-  /* Prevent text from overflowing */
-}
-
-/* Style for Heading and Subheading */
-.text-content h1,
-.text-content p {
-  color: white;
-  /* White text */
-  margin: 0;
-  /* Remove default margin */
-}
-
-/* Hero Heading */
-.text-content h1 {
-  font-size: 2.5rem;
-  /* Standard size for larger screens */
-  line-height: 1.2;
-}
-
-/* Subheading */
-.text-content p {
-  font-size: 1.5rem;
-  /* Standard size for larger screens */
-  margin-top: 5px;
-}
-
-/* Responsive Styling */
-.text-content {
-  bottom: 20px;
-  /* Consistent positioning */
-  left: 20px;
-  /* Consistent positioning */
-}
-
-.text-content h1 {
-  font-size: 2rem;
-  /* Adjusted for responsiveness */
-}
-
-.text-content p {
-  font-size: 1.2rem;
-  /* Adjusted for responsiveness */
-}
-
-/* Mobile-Specific Styling */
-@media (max-width: 768px) {
-  .responsive-image {
-    object-fit: contain;
-    /* Adjusts image size */
-  }
-
-  .swiper-container {
-    height: 95vh;
-    /* Full screen height for mobile devices */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    position: relative;
-  }
-
-  .swiper-slide {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    /* Hides overflow for clean edges */
-  }
-
-  .logo {
-    display: none;
-    /* Hide default image for mobile */
-  }
-
-  .mobile-logo {
-    display: block;
-    /* Show custom image for mobile */
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    /* Ensures the image fills the container on mobile */
-    aspect-ratio: 16/9;
-    /* Adds an aspect ratio for uniformity */
-    border-radius: 12px;
-    /* Optional: Adds a rounded effect */
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-    /* Optional: Adds subtle shadow for aesthetics */
-  }
-}
-
-/* Default for larger screens */
-.logo {
-  display: block;
-}
-
-.mobile-logo {
-  display: none;
-  /* Hide mobile-specific image on desktop */
-}
-
-
 /* Custom Scrollbar */
 ::-webkit-scrollbar {
   width: 10px;
@@ -3290,4 +3129,32 @@ body {
 /* Main Content (Hidden Initially) */
 #main-content {
   display: none;
+}
+
+/* Swiper Styles */
+.swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: white;
+}
+
+.swiper-pagination-bullet-active {
+  background: white;
 }
