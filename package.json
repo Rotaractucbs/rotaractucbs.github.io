@@ -1,0 +1,24 @@
+{
+  "name": "play-tailwind",
+  "version": "2.0.0",
+  "description": "",
+  "main": "tailwind.config.js",
+  "scripts": {
+  "start": "npm run tailwind:watch",
+  "tailwind:watch": "set NODE_ENV=development && npx tailwindcss -i ./src/input.css -o ./assets/css/tailwind.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/uideck/play-tailwind.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.5.2",
+    "prettier": "^3.1.1",
+    "prettier-plugin-tailwindcss": "^0.5.9",
+    "tailwindcss": "^3.4.17"
+  }
+}

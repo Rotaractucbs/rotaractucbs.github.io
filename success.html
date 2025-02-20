@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/images/logo/logo.png" type="image/x-icon" />
+    <title>Success</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            text-align: center;
+            padding: 50px;
+        }
+        .container {
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        h1 {
+            color: #3758F9;
+        }
+        p {
+            color: #555;
+            font-size: 18px;
+        }
+        .highlight {
+            color: #3758F9;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Success!</h1>
+        <p>Thank you, <span id="name" class="highlight"></span>, for subscribing!</p>
+        <p>We've sent a confirmation email to <span id="email" class="highlight"></span>.</p>
+        <p>Please check your inbox and confirm your subscription.</p>
+    </div>
+
+    <script>
+        // Function to extract query parameters from the URL
+        function getQueryParams() {
+            const params = {};
+            const queryString = window.location.search;
+            const urlParams = new URLSearchParams(queryString);
+
+            // Extract parameters
+            params.first_name = urlParams.get('first_name') || 'Subscriber';
+            params.email = urlParams.get('email') || 'your email';
+
+            return params;
+        }
+
+        // Dynamically update the content with query parameters
+        const queryParams = getQueryParams();
+        document.getElementById('name').textContent = queryParams.first_name;
+        document.getElementById('email').textContent = queryParams.email;
+    </script>
+</body>
+</html>
