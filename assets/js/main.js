@@ -278,6 +278,13 @@ document.addEventListener('DOMContentLoaded', function () {
   // Blog Content
   const blogContent = [
     {
+      title: 'Saanjh 2.0: A Cultural Exchange Experience',
+      image: '../../assets/images/photos/MEVNT.jpeg',
+      date: 'Feb 22, 2025',
+      description: 'On February 22nd, 2025, the Rotaract Club of UCBS had the privilege of co-hosting the IDYE event, Saanjh 2.0, in Shimla. This remarkable event, organized by our district, aimed to bring together Rotaractors from different locations, fostering cultural exchange and strengthening inter-club bonds.',
+      link: '../../blogs/22-february-2025.html'
+    },
+    {
       title: '📸 Photography Competition 2025 🌿',
       image: '../../assets/images/photos/PC.jpg',
       date: 'Jan 19, 2025',
@@ -426,6 +433,8 @@ document.addEventListener('DOMContentLoaded', function () {
       link: '../../blog-grids.html'
     }
   ];
+
+
 
   function updateProjectsection(content) {
     content.forEach((item, index) => {

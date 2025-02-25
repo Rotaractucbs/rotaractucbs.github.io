@@ -63,3 +63,8 @@
 .common-carousel .swiper-button-prev svg {
   @apply w-auto h-auto;
 }
+
+#calendar {
+  max-width: 900px;
+  margin: 0 auto;
+}
