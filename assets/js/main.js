@@ -425,12 +425,12 @@ document.addEventListener('DOMContentLoaded', function () {
     {
       title: 'Saanjh 2.0: A Cultural Exchange Experience',
       image: '../../assets/images/photos/MEVNT.jpeg',
-      link: '../../blog-grids.html'
+      link: '../../blogs/22-february-2025.html'
     },
     {
       title: '📸 Photography Competition 2025 🌿',
       image: '../../assets/images/photos/PC.jpg',
-      link: '../../blog-grids.html'
+      link: '../../blogs/19-january-2025.html'
     }
   ];
 
