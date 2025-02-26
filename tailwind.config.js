@@ -20,10 +20,6 @@ const plugin = require('tailwindcss/plugin');
       "2xl": "1320px",
       // => @media (min-width: 1400px) { ... }
     },
-    animation: {
-      'ping-slow': 'ping 2s infinite',
-      'scroll': 'scroll 30s linear infinite',
-    },
     container: {
       center: true,
       padding: "16px",

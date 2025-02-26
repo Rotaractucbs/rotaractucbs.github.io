@@ -1001,17 +1001,6 @@ video {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-@keyframes ping {
-  75%, 100% {
-    transform: scale(2);
-    opacity: 0;
-  }
-}
-
-.animate-ping-slow {
-  animation: ping 2s infinite;
-}
-
 .cursor-pointer {
   cursor: pointer;
 }
@@ -1122,14 +1111,6 @@ video {
 
 .border-0 {
   border-width: 0px;
-}
-
-.border-2 {
-  border-width: 2px;
-}
-
-.border-4 {
-  border-width: 4px;
 }
 
 .border-b {
@@ -1422,14 +1403,6 @@ video {
 
 .pt-\[120px\] {
   padding-top: 120px;
-}
-
-.pl-4 {
-  padding-left: 1rem;
-}
-
-.pl-2 {
-  padding-left: 0.5rem;
 }
 
 .text-left {
@@ -2116,10 +2089,6 @@ video {
     width: 66.666667%;
   }
 
-  .md\:w-full {
-    width: 100%;
-  }
-
   .md\:justify-start {
     justify-content: flex-start;
   }
@@ -2139,10 +2108,6 @@ video {
 
   .md\:pt-\[130px\] {
     padding-top: 130px;
-  }
-
-  .md\:text-left {
-    text-align: left;
   }
 
   .md\:text-\[28px\] {
@@ -2172,10 +2137,6 @@ video {
 
   .md\:leading-\[1\.44\] {
     line-height: 1.44;
-  }
-
-  .md\:\*\:w-full > * {
-    width: 100%;
   }
 }
 
