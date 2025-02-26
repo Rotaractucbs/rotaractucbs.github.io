@@ -11,7 +11,7 @@
   <link rel="shortcut icon" href="assets/images/logo/logo.png" type="image/x-icon" />
   <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
   <link rel="stylesheet" href="assets/css/animate.css" />
-  <link rel="stylesheet" href="assets/css/tailwind.css" />
+  <link rel="stylesheet" href="./assets/css/output.css" />
   <!-- Include Lottie Web Library -->
   <script src="https://cdn.jsdelivr.net/npm/lottie-web@5.9.6/build/player/lottie.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
@@ -37,10 +37,10 @@
 
 </head>
 
-<body">
+<body class="home-page">
   <!-- ====== Navbar Section Start -->
   <div
-    class="absolute top-0 left-0 z-40 flex items-center w-full bg-transparent dark:bg-gray-800 ud-header bg-gray-1 dark:bg-dark-2"
+    class="absolute top-0 left-0 z-40 flex items-center w-full bg-transparent dark:bg-gray-800 ud-header bg-gray-1 "
     style="height: 70px;">
 
     <div class="container">
@@ -103,7 +103,7 @@
                   <a href="javascript:void(0)"
                     class="flex py-2 mx-8 text-base font-medium ud-menu-scroll text-dark group-hover:text-primary dark:text-white lg:ml-7 lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 lg:text-body-color dark:lg:text-dark-6 xl:ml-10">
                     Explore
-
+                    
                     <svg class="ml-2 fill-current" width="16" height="20" viewBox="0 0 16 20" fill="none"
                       xmlns="http://www.w3.org/2000/svg">
                       <path
@@ -114,13 +114,25 @@
                     class="submenu relative left-0 top-full hidden w-[250px] rounded-sm bg-white p-4 transition-[top] duration-300 group-hover:opacity-100 dark:bg-dark-2 lg:invisible lg:absolute lg:top-[110%] lg:block lg:opacity-0 lg:shadow-lg lg:group-hover:visible lg:group-hover:top-full">
 
 
-                    <a href="gallery.html"
+                    <a href="./gallery.html"
                       class="block rounded px-4 py-[10px] text-sm text-body-color hover:text-primary dark:text-dark-6 dark:hover:text-primary">
                       Gallery
                     </a>
                     <a href="#contact"
                       class="block rounded px-4 py-[10px] text-sm text-body-color hover:text-primary dark:text-dark-6 dark:hover:text-primary">
                       Donations
+                    </a>
+                    <a href="./notice.html"
+                      class="block rounded px-4 py-[10px] text-sm text-body-color hover:text-primary dark:text-dark-6 dark:hover:text-primary">
+                      Notice
+                    </a>
+                    <!-- <a href="./firstaid.html"
+                      class="block rounded px-4 py-[10px] text-sm text-body-color hover:text-primary dark:text-dark-6 dark:hover:text-primary">
+                      First Aid Kit
+                    </a> -->
+                    <a href="./calendar.html"
+                      class="block rounded px-4 py-[10px] text-sm text-body-color hover:text-primary dark:text-dark-6 dark:hover:text-primary">
+                      Events Calendar
                     </a>
                   </div>
                 </li>
@@ -183,15 +195,14 @@
   </div>
   <!-- ====== Navbar Section End -->
 
-
-
   <!-- Full-Screen Carousel with Responsive Text -->
-  <section class="relative pb-10 pt-20 dark:bg-dark lg:pb-20 lg:pt-[120px]">
+  <section id="home" class="relative pb-10 pt-20 dark:bg-dark lg:pb-20 lg:pt-[120px]">
+
     <div class="container">
       <div class="flex flex-wrap justify-center -mx-4">
         <div class="w-full px-4">
           <div
-            class="wow fadeInUp dark:fadeInUp relative z-20 mb-[50px] h-[300px] md:h-[400px] lg:h-[500px] overflow-hidden rounded-[5px]"
+            class="wow fadeInUp dark:fadeInUp relative z-20  h-[500px]overflow-hidden rounded-[5px]"
             data-wow-delay=".1s">
             <div class="swiper-container">
               <div class="swiper-wrapper">
@@ -227,20 +238,21 @@
 
                 <!-- Slide 3 -->
                 <div class="swiper-slide relative">
-                  <img src="./assets/images/Projects/candle1.jpg" alt="Slide 3"
+                  <img src="./assets/images/photos/28.jpg" alt="Slide 2"
                     class="object-cover object-center w-full h-full" />
                   <div
                     class="absolute top-0 left-0 z-10 flex items-end w-full h-full bg-gradient-to-t from-dark-700 to-transparent p-4 sm:px-8">
                     <div class="text-white">
+<<<<<<< HEAD
                       <h1 class="font-bold text-[clamp(1.5rem,4vw,3rem)] leading-tight">Build a Better Future</h1>
                       <p class="text-[clamp(1rem,2.5vw,1.5rem)] leading-relaxed">Shape the world with us!</p>
                     </div>
-                  </div>
-                </div>
+                </div> 
+
+>>>>>>> test-branch
                 <!-- Slide 4 -->
                 <div class="swiper-slide relative">
                   <img src="./assets/images/photos/53.jpg" alt="Slide 4"
-                    class="object-cover object-center w-full h-full" />
                   <div
                     class="absolute top-0 left-0 z-10 flex items-end w-full h-full bg-gradient-to-t from-dark-700 to-transparent p-4 sm:px-8">
                     <div class="text-white">
@@ -262,19 +274,30 @@
                   </div>
                 </div>
 
-                <!-- Navigation Buttons -->
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
-                <!-- Pagination Dots -->
-                <div class="swiper-pagination"></div>
+                  <!-- Navigation Buttons -->
+                  <div class="swiper-button-next"></div>
+                  <div class="swiper-button-prev"></div>
+                  <!-- Pagination Dots -->
+                  <div class="swiper-pagination"></div>
+                  
               </div>
             </div>
           </div>
-        </div>
+        </div>       
       </div>
+
+      <div class="mt-8 flex justify-between items-center gap-2 w-full bg-white border border-1 border-primary dark:border-dark-700 ">
+          <div class="text-white text-sm font-light lg:text-lg bg-primary border border-primary px-4 py-[10px] mr-4 ">
+            NOTICE
+          </div>
+          <a href="/notice.html" class="w-full text-sm text-left">Check out the latest notices.</a>
+          <a href="/notice.html" class="w-4 h-4 mr-4">
+          <svg class="w-full h-full" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M12.2929 4.29289C12.6834 3.90237 13.3166 3.90237 13.7071 4.29289L20.7071 11.2929C21.0976 11.6834 21.0976 12.3166 20.7071 12.7071L13.7071 19.7071C13.3166 20.0976 12.6834 20.0976 12.2929 19.7071C11.9024 19.3166 11.9024 18.6834 12.2929 18.2929L17.5858 13H4C3.44772 13 3 12.5523 3 12C3 11.4477 3.44772 11 4 11H17.5858L12.2929 5.70711C11.9024 5.31658 11.9024 4.68342 12.2929 4.29289Z" fill="#3758f9"></path> </g></svg>
+          </a>
+      </div>
+
+    </div>
   </section>
-
-
 
   <!-- ====== About Section Start -->
   <section id="about" class="bg-gray-1 pb-8 pt-20 dark:bg-dark-2 lg:pb-[70px] lg:pt-[120px]">
@@ -494,15 +517,6 @@
   </section>
 
   <!-- Blog Section End -->
-
-
-
-
-
-
-
-
-
 
   <!-- ====== Team Section Start -->
   <section id="team" class="overflow-hidden bg-gray-1 pb-12 pt-20 dark:bg-dark-2 lg:pb-[90px] lg:pt-[120px]">
@@ -1519,6 +1533,16 @@
               <li>
                 <a href="#contact" class="mb-3 inline-block text-base text-gray-7 hover:text-primary">
                   Donations
+                </a>
+              </li>
+              <li>
+                <a href="./notice.html" class="mb-3 inline-block text-base text-gray-7 hover:text-primary">
+                  Notice
+                </a>
+              </li>
+              <li>
+                <a href="./calendar.html" class="mb-3 inline-block text-base text-gray-7 hover:text-primary">
+                  Events Calendar
                 </a>
               </li>
             </ul>

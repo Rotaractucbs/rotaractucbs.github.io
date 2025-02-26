@@ -1,5 +1,7 @@
-module.exports = {
-  content: ["./*.html", "./assets/**/*.js"],
+const plugin = require('tailwindcss/plugin');
+ /** @type {import('tailwindcss').Config} */
+ export default {
+  content: ["./*.html", "./src/**/*.{html,js,ts,jsx,tsx}"],
   darkMode: "class",
   theme: {
     screens: {

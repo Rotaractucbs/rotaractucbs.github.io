@@ -204,168 +204,237 @@ function hideToasts() {
   document.getElementById('failureAlert').classList.add('hidden');
 }
 
+////////////////////// Notices ///////////////////////////////
+
 document.addEventListener('DOMContentLoaded', function () {
+  const noticeContent = [
+    {
+      title: 'Tree Plantation Drive',
+      date: '28 February 2025',
+      description: 'Join us on February 28th for a Tree Plantation Drive and take a step toward a greener future! Planting trees helps combat climate change, improves air quality, and supports biodiversity. Let’s work together to make our environment healthier and more sustainable. Every tree counts—be a part of this change!'
+    },
+    {
+      title: 'Blood Donation Camp',
+      date: '01 March 2025',
+      description: 'Save lives by donating blood! Join us on March 1st for our Blood Donation Camp and make a difference. Your donation can help patients in need, from accident victims to those battling illnesses. A few minutes of your time can mean a lifetime for someone else. Be a hero—donate blood!'
+    }
+  ];
+
+  function renderNotices(homePage = true) {
+    const noticeContainer = document.querySelector("#notice-list");
+    if (!noticeContainer) return; 
+
+    noticeContainer.innerHTML = ""; 
+
+    noticeContent.forEach((item) => {
+      let noticeItem;
+      if (homePage) {
+        
+        noticeItem = `
+    
+          <div class="w-full px-4 md:w-1/2 lg:w-1/3">
+          ${item.title}
+          </div>
+          
+        `;
+      } else {
+       
+        noticeItem = `
+          <div class="w-full px-4 md:w-1/2 lg:w-1/3">
+            <div class="wow fadeInUp group mb-10" data-wow-delay=".1s">
+              <h3>
+                <a href="javascript:void(0)"
+                  class="mb-4 inline-block text-xl font-semibold text-dark hover:text-primary dark:text-white dark:hover:text-primary">
+                  ${item.title}
+                </a>
+              </h3>
+              <div>
+                <span class="mb-6 inline-block rounded-[5px] bg-primary px-4 py-0.5 text-center text-xs font-medium leading-loose text-white">
+                  ${item.date}
+                </span>
+                <p class="max-w-[370px] text-base text-body-color dark:text-dark-6" style="text-align: justify;">
+                  ${item.description}
+                </p>
+              </div>
+            </div>
+          </div>
+        `;
+      }
+      noticeContainer.innerHTML += noticeItem;
+    });
+  }
+
+  // Detect whether it's the home page or the notices page
+  const isHomePage = document.body.classList.contains("home-page");
+  renderNotices(isHomePage);
+});
+  
+
+
+  ////////////////////////////////// BLOGS //////////////////////////////////////////////////
+
+document.addEventListener('DOMContentLoaded', function () {
+
   // Blog Content
   const blogContent = [
+    {
+      title: 'Saanjh 2.0: A Cultural Exchange Experience',
+      image: '../../assets/images/photos/MEVNT.jpeg',
+      date: 'Feb 22, 2025',
+      description: 'On February 22nd, 2025, the Rotaract Club of UCBS had the privilege of co-hosting the IDYE event, Saanjh 2.0, in Shimla. This remarkable event, organized by our district, aimed to bring together Rotaractors from different locations, fostering cultural exchange and strengthening inter-club bonds.',
+      link: '../../blogs/22-february-2025.html'
+    },
     {
       title: '📸 Photography Competition 2025 🌿',
       image: '../../assets/images/photos/PC.jpg',
       date: 'Jan 19, 2025',
-      description: ' The Photography Competition 2025 was organized to celebrate creativity and passion for photography. Participants were invited to showcase their best unedited nature-themed photographs, capturing the beauty of sky, forests, rural areas, water bodies, and more. The competition aimed to highlight unique perspectives of nature through the lens of talented photographers.',
-      link: 'javascript:void(0)'
+      description: 'To celebrate World Photography Day, Rotaract UCBS organized a photo competition with the theme of “Nature.” Members submitted unedited photos capturing the beauty of the natural world. Divyansh Thakur won first place for his breathtaking photo of the Himalayas, highlighting the creativity and talent within the club.',
+      link: '../../blogs/19-january-2025.html'
     },
     {
       title: 'Project WASH: Promoting Health Through Clean Water and Hygiene!',
       image: '../../assets/images/photos/55.jpg',
       date: 'Dec 13, 2024',
-      description: 'We are proud to announce the successful completion of Project WASH, an initiative dedicated to promoting water, sanitation, and hygiene (WASH) awareness among students. This project focused on the importance of clean water access, proper sanitation practices, and maintaining hygiene to prevent illness. 🚰💧',
-      link: 'javascript:void(0)'
+      description: 'On January 13, 2025, Rotaract UCBS launched Project WASH at Govt. High School, Chaura Maidan. The initiative educated 30 students on proper handwashing techniques, emphasizing how clean hands prevent the spread of diseases. The project is encouraging positive change and healthier habits, making a lasting impact on the community.',
+      link: '../../blogs/13-december-2024.html'
     },
     {
       title: 'Health First Initiative: Empowering Students with First Aid Knowledge!',
       image: '../../assets/images/photos/45.jpg',
       date: 'Dec 13, 2024',
-      description: 'We are thrilled to share the success of our Health First Initiative, a transformative session where we equipped students with essential first aid skills and infection prevention knowledge. This initiative aimed to empower students to respond effectively in emergencies and maintain their health and well-being. To further support their efforts, we donated 50 first aid kits. 🩺💪',
-      link: 'javascript:void(0)'
+      description: 'On January 13, 2025, Rotaract UCBS distributed 50 first aid kits at Govt. High School, Chaura Maidan, empowering students with essential medical knowledge. Led by Rtr. Ayush Sharma, the initiative focused on teaching students how to handle minor injuries and emergencies, ensuring they are prepared for critical situations.',
+      link: '../../blogs/13-december-2024-blog-2.html'
     },
     {
       title: 'Breaking Barriers: A Successful Start with Mental Health Talk!',
       image: '../../assets/images/photos/46.png',
       date: 'Dec 11, 2024',
-      description: 'We are delighted to share the success of the first session of Breaking Barriers, a series dedicated to exploring diverse and impactful topics. Our inaugural session, focused on mental health, featured an insightful talk by Dr. Ravi Sharma, who captivated the audience with his expertise and compassionate approach. 🗣💬 Click on the Title to Watch Now!!!',
-      link: 'https://fb.watch/wL_7Bj9LI6/'
+      description: 'On December 11, 2024, Rotaract UCBS kicked off the Breaking Barriers series with a session on mental health. Led by Dr. Ravi Sharma, the event encouraged open conversations and supported resilience-building. It aimed to break stigma and helped participants learn to manage stress and seek help, fostering mental well-being.',
+      link: '../../blogs/11-december-2024.html'
     },
     {
       title: 'Integrated social service from distant mode',
       image: '../../assets/images/photos/MT.jpg',
       date: 'OCT 20, 2024',
-      description: 'One of the key inspirations for the event was the concept of leadership through service. Members shared stories of their previous projects, highlighting the positive impact they had on their local communities. The energy in the room was palpable as they discussed their vision for the future and the ways they plan to empower others.',
-      link: 'javascript:void(0)'
+      description: 'The Integrated Social Service from Distant Mode event connected Rotaract members virtually to discuss leadership through service. Members shared inspiring project stories and engaged in discussions on future initiatives, emphasizing how leadership and service can create lasting change in communities.',
+      link: '../../blogs/20-october-2024.html'
     },
     {
       title: 'Ripple of kindness',
-      image: '../../assets/images/Photos/RK.png',
+      image: '../../assets/images/photos/RK.png',
       date: 'Sep 25, 2024',
-      description: 'Spreading kindness ripple by ripple—after our first installation ceremony, we donated food to those in need, sharing love and support with the underprivileged.',
-      link: 'javascript:void(0)'
+      description: 'Following the Installation Ceremony, Rotaract UCBS organized the Ripple of Kindness initiative, donating food to the underprivileged. The event demonstrated the club’s commitment to spreading love, hope, and support through small acts of kindness, creating a ripple effect that encourages positive change and community empowerment.',
+      link: '../../blogs/25-september-2024.html'
     },
     {
       title: 'Installation Ceremony of Rtr. Rijul Sen',
       image: '../../assets/images/Projects/installation1.jpg',
       date: 'Sep 25, 2024',
-      description: 'Rotaract Club UCBS celebrated the installation of Rtr. Rijul Sen as President for 2024-25! 🎉 The ceremony, held at Rotary Town Hall, Shimla, was graced by esteemed guests, including DRR Rtr. Shashank Kaushik and Rtn. Maala Singh. 🤝 Rtr. Rijul Sen and Rtr. Ayush Sharma were sworn in as President and Secretary, respectively. 💼 The event was a testament to the clubs commitment to service and leadership. 💪',
-      link: 'javascript:void(0)'
+      description: 'On the installation of Rtr. Rijul Sen as President, the Rotaract Club of UCBS celebrated the beginning of a new leadership era. The event, attended by DRR Rtr. Shashank Kaushik and Rtn. Maala Singh, also saw Rtr. Ayush Sharma sworn in as Secretary, marking the start of a vibrant year of service.',
+      link: '../../blogs/25-september-2024-blog-2.html'
     },
     {
       title: 'Trip to Leh Ladakh',
       image: '../../assets/images/Projects/leh1.jpg',
       date: 'Sep 13, 2024',
-      description: 'The Rotaract Club of UCBS embarked on an unforgettable adventure through the breathtaking landscapes of Leh-Ladakh! 🏔️ From the majestic Khardung La Pass to the serene Pangong Lake, they explored stunning vistas and embraced the spirit of adventure. 🏕️ Along the way, they promoted environmental awareness and supported local communities, making a positive impact. 🌍 This journey was not just about exploration but also about fostering strong bonds and creating lifelong memories. 🤝❤️',
-      link: 'javascript:void(0)'
+      description: 'Rotaract UCBS embarked on an unforgettable journey through Leh-Ladakh, exploring Khardung La Pass, Nubra Valley, and Pangong Lake. Along with breathtaking landscapes, the trip focused on environmental awareness, engaging with local communities, and visiting the Diskit Monastery, making the adventure an impactful and purposeful exploration.',
+      link: '../../blogs/13-september-2024.html'
     },
     {
       title: 'Pinning Ceremony Of BODs 2024-25',
       image: '../../assets/images/Projects/pinning1.jpg',
       date: 'Sep 03, 2024',
-      description: 'Rotaract Club UCBS celebrated the induction of its new leadership team at a pinning ceremony held at Rotary Town Hall, Shimla. 🎉 The event honored the commitment of the new board members to service, integrity, and fellowship. 🤝 With the pinning of the official Rotaract badge, the club welcomed a new era of leadership and community impact.',
-      link: 'javascript:void(0)'
+      description: 'The Pinning Ceremony for the Board of Directors 2024-25 was held at Rotary Town Hall, Shimla, marking the transition of leadership. The event honored the new board members who pledged to uphold service, integrity, and fellowship. With fresh enthusiasm, the club is ready to embark on impactful initiatives for the year ahead.',
+      link: '../../blogs/3-september-2024.html'
     },
     {
       title: 'A Day of Joy and Care for Our Furry Friends',
       image: '../../assets/images/Projects/dog1.jpg',
       date: 'Aug 25, 2024',
-      description: 'Rotaract UCBS marked International Dog Day with a heartwarming event dedicated to our beloved street dogs. We organized a special feeding drive, providing nutritious meals and essential supplies to these furry companions. Lets spread love and compassion for all creatures, big and small. 🐾',
-      link: 'javascript:void(0)'
+      description: 'On August 25, 2024, Rotaract UCBS celebrated National Dog Day by feeding and caring for 60 street dogs across Shimla. This heartwarming initiative, carried out at various locations like Old Bus Stand and Chauda Maidan, exemplified the club’s dedication to animal welfare and compassion for all living beings. 🐾',
+      link: '../../blogs/25-august-2024.html'
     },
     {
       title: 'District Assembly of DRR Rtr. Shashank Kaushik (3080)',
       image: '../../assets/images/photos/DE2.jpg',
       date: 'Aug 24, 2024',
-      description: 'The installation ceremony “Sharanga” marked the ascension of Rtr. Shashank Kaushik to the esteemed position of District Rotaract Representative (DRR). This vibrant event featured the ceremonial collaring of the new DRR, symbolizing his induction into office.',
-      link: 'javascript:void(0)'
+      description: 'Rotaract UCBS proudly attended the District Assembly – Sharanga, where Rtr. Shashank Kaushik was installed as DRR for District 3080. The event included inspiring speeches, networking, and connections that fueled our mission of service and positive change. Rtr. Ayush Sharma represented our club at this monumental occasion.',
+      link: '../../blogs/24-august-2024.html'
     },
     {
       title: 'Candle March for Justice',
       image: '../../assets/images/Projects/candle1.jpg',
       date: 'Aug 20, 2023',
-      description: 'We joined a solemn candle march with fellow Rotaract and Rotary members, along with other NGOs, at Mall Road, Shimla, to express our deep sorrow and outrage over the tragic incident in Kolkata. We stand united in solidarity with the victims family and call for a thorough investigation and swift justice. Lets work together to create a safer and more compassionate society. 🕯️💔',
-      link: 'javascript:void(0)'
-    },
-    {
-      title: 'World Photography Day Competition',
-      image: './assets/images/Projects/competition.jpg',
-      date: 'Aug 19, 2024',
-      description: 'Rotaract UCBS organized a captivating photography competition to celebrate World Photography Day. The event showcased the incredible talent of our members, as they captured the beauty and diversity of life through their lenses. From stunning landscapes to heartwarming portraits, the competition showcased the power of photography to inspire and connect. 📸🌟',
-      link: 'javascript:void(0)'
+      description: 'On August 20, 2024, a candle march was held at Shimla Ridge to honor Moumita and protest against rape. The event symbolized solidarity with victims of violence and called for justice, reflecting the club’s commitment to advocating for a safer, more just society for all, united in compassion and action.',
+      link: '../../blogs/20-august-2024.html'
     },
     {
       title: 'Rakhi Celebration with Governor, Army and Police',
       image: '../../assets/images/Projects/rakhi3.jpg',
       date: 'Aug 18, 2023',
-      description: 'We celebrated Raksha Bandhan by organizing a special Rakhi distribution ceremony with the esteemed Governor of Himachal Pradesh, along with brave Army personnel and dedicated Police officers. By tying over 70 Rakhis, we strengthened the bond of brotherhood and celebrated the spirit of unity and patriotism. 🇮🇳❤️',
-      link: 'javascript:void(0)'
+      description: 'On August 18, 2024, Rotaract UCBS celebrated Raksha Bandhan by tying rakhis to police officers and soldiers. Members visited Jutogh Police Post, met the Honourable Governor of Himachal Pradesh, and paid tribute to Indian Army soldiers at Jutogh Cantonment, symbolizing gratitude, respect, and the bond of protection and unity.',
+      link: '../../blogs/18-august-2024.html'
     },
     {
       title: 'Cow Shelter Visit on Independence Day',
       image: './assets/images/Projects/cow1.jpg',
       date: 'Aug 15, 2024',
       description: 'This Independence Day, we chose to celebrate by giving back to our community. We visited a local cow shelter and extended a helping hand to these gentle creatures. By donating essential supplies and spending quality time with them, we experienced a sense of fulfillment and gratitude. Its a small step, but its a step towards a more compassionate and sustainable future. 🐮🙏',
-      link: 'javascript:void(0)'
+      link: '../../blogs/15-august-2024.html'
     },
     {
       title: ' Blood Donation Drive at Police Ground, Junga',
       image: './assets/images/Projects/blood2.jpg',
       date: 'Aug 07, 2024',
       description: 'Rotary Club Shimla HillQueens, in collaboration with Himachal Pradesh Armed Police 1st Battalion Junga, successfully organized a blood donation camp despite challenging weather. 🩸💪 Over 30 units of blood were collected and donated to IGMC Hospital Shimla blood bank. 🏥 The event was made possible by the support of Mr. Rohit Malpani IPS and Deputy Commandant Babita Rana. 🤝',
-      link: 'javascript:void(0)'
+      link: '../../blogs/7-august-2024.html'
     },
     {
       title: 'Igniting Leadership: Rotaract UCBS Engages in Leadership Training',
       image: './assets/images/Projects/ltp1.jpg',
       date: 'July 21, 2024',
-      description: 'The Rotaract Club of UCBS recently participated in District 3080’s Leadership Training Programme (LTP). This transformative event, designed to empower and inspire future leaders, provided Rotaract members with valuable insights, skills, and networking opportunities. Through engaging workshops, inspiring talks, and interactive sessions, participants gained a deeper understanding of leadership principles, effective communication, and community service.  🚀',
-      link: 'javascript:void(0)'
+      description: 'Rotaract UCBS participated in the District 3080 Leadership Training Programme, gaining valuable insights into leadership, communication, and community service. With guidance from DRR Rtr. Shashank Kaushik and DRCC Rtn. Mohit Singla, members left feeling empowered and motivated to lead and make a positive impact in the community.',
+      link: '../../blogs/21-july-2024.html'
     },
     {
       title: 'Green Tomorrow: Tree Plantation at Ava Lodge',
       image: './assets/images/Projects/tree1.jpg',
       date: 'July 02, 2024',
       description: 'Rotaract Club UCBS took a significant step towards a greener future by organizing a tree plantation drive at Ava Lodge, Chaura Maidan, Shimla. The initiative aimed to enhance environmental sustainability by planting over 50 trees and flowers, which contribute to cleaner air, soil conservation, and biodiversity. 🌳🌎',
-      link: 'javascript:void(0)'
+      link: '../../blogs/2-july-2024.html'
     },
     {
       title: '🎉 Charter Presentation of Rotaract Club of UCBS by District Governor 🎓',
       image: './assets/images/Projects/dg.jpg',
       date: 'May 17, 2024',
-      description: 'The official visit of District Governor Rtn. Arun Mongia to RCS Hill Queens marked a significant milestone with the formal pinning and charter presentation of the newly formed Rotaract Club of UCBS. 🌟 The ceremony was graced by the First Lady of the District, Rtn. Charu Mongia, and Assistant Governor CA/Rtn. Rohit Karol, emphasizing Rotarys commitment to empowering youth and fostering leadership. 💡✨ This memorable occasion celebrated the induction of this vibrant new club into the Rotary family, inspiring future initiatives and collaborations. 🤝🎊',
-      link: 'javascript:void(0)'
+      description: 'On May 17, 2024, Rotaract UCBS celebrated its charter presentation ceremony at RCS Hill Queens, marking its official induction into the Rotary family. The event, attended by District Governor Rtn. Arun Mongia, was a milestone in the club’s journey of service, leadership, and community impact, inspiring a year of growth. 🤝🎊',
+      link: '../../blogs/17-may-2024.html'
     },
     {
       title: 'Blood Donation Camp at The Ridge, Shimla',
       image: './assets/images/Projects/Blood1.jpg',
       date: 'May 01, 2024',
-      description: 'Rotary Club Shimla Hill Queens, in collaboration with Rotaract Club UCBS and Kamla Nehru State Hospital Blood Bank, organized a successful blood donation camp at the historic Ridge on May 1st. The camp aimed to address the urgent need for blood donations and collected 56 units of blood from 70 generous donors. 🩸❤️',
-      link: '../../BloodDonationRidge.html'
+      description: 'The Integrated Social Service from Distant Mode event connected Rotaract members virtually to discuss leadership through service. Members shared impactful project stories and engaged in discussions about future initiatives, highlighting how leadership and service can create lasting change for the greater good.',
+      link: '../../blogs/1-may-2024.html'
     }
 
   ];
-
-
-
 
   // Footer Blog Content
   const footerBlogContent = [
     {
-      title: 'Promoting Health Through Clean Water and Hygiene!',
-      image: '../../assets/images/photos/55.jpg',
-      link: '../../blog-grids.html'
+      title: 'Saanjh 2.0: A Cultural Exchange Experience',
+      image: '../../assets/images/photos/MEVNT.jpeg',
+      link: '../../blogs/22-february-2025.html'
     },
     {
-      title: 'Empowering Students with First Aid Knowledge!',
-      image: '../../assets/images/photos/45.jpg',
-      link: '../../blog-grids.html'
+      title: '📸 Photography Competition 2025 🌿',
+      image: '../../assets/images/photos/PC.jpg',
+      link: '../../blogs/19-january-2025.html'
     }
   ];
+
+
 
   function updateProjectsection(content) {
     content.forEach((item, index) => {
