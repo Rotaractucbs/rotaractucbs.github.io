@@ -173,7 +173,7 @@ function sendMail(event) {
     message: document.getElementById('message').value
   };
 
-  emailjs.send('service_5pg5u58', 'template_prbtn4k', parms)
+  emailjs.send('service_vsm97v1', 'template_prbtn4k', parms)
     .then(function (response) {
       showToast('successAlert', 'success');
     }, function (error) {
