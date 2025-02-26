@@ -423,13 +423,13 @@ document.addEventListener('DOMContentLoaded', function () {
   // Footer Blog Content
   const footerBlogContent = [
     {
-      title: 'Promoting Health Through Clean Water and Hygiene!',
-      image: '../../assets/images/photos/55.jpg',
+      title: 'Saanjh 2.0: A Cultural Exchange Experience',
+      image: '../../assets/images/photos/MEVNT.jpeg',
       link: '../../blog-grids.html'
     },
     {
-      title: 'Empowering Students with First Aid Knowledge!',
-      image: '../../assets/images/photos/45.jpg',
+      title: '📸 Photography Competition 2025 🌿',
+      image: '../../assets/images/photos/PC.jpg',
       link: '../../blog-grids.html'
     }
   ];

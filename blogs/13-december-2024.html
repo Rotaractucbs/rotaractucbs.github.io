@@ -428,7 +428,7 @@
                         const topic = document.querySelector('meta[name="topic"]') ? document.querySelector('meta[name="topic"]').getAttribute('content') : 'Topic';
                       
                         // Generate the share text with article title and topic
-                        const shareText = `Read this article from Rotaract Club, University College of Business Studies: "${articleTitle}" on the topic: ${topic}`;
+                        const shareText = `Read this article from the Rotaract Club, University College of Business Studies on the topic: "${articleTitle}"`;
                       
                         // Update the social media links with the current URL and share text
                         document.getElementById('facebook-share').href = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(currentUrl)}&quote=${encodeURIComponent(shareText)}`;
