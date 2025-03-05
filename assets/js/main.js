@@ -208,16 +208,12 @@ function hideToasts() {
 
 document.addEventListener('DOMContentLoaded', function () {
   const noticeContent = [
-    {
-      title: 'Tree Plantation Drive',
-      date: '28 February 2025',
-      description: 'Join us on February 28th for a Tree Plantation Drive and take a step toward a greener future! Planting trees helps combat climate change, improves air quality, and supports biodiversity. Let’s work together to make our environment healthier and more sustainable. Every tree counts—be a part of this change!'
-    },
-    {
-      title: 'Blood Donation Camp',
-      date: '01 March 2025',
-      description: 'Save lives by donating blood! Join us on March 1st for our Blood Donation Camp and make a difference. Your donation can help patients in need, from accident victims to those battling illnesses. A few minutes of your time can mean a lifetime for someone else. Be a hero—donate blood!'
-    }
+    // {
+    //   title: 'Tree Plantation Drive',
+    //   date: '28 February 2025',
+    //   description: 'Join us on February 28th for a Tree Plantation Drive and take a step toward a greener future! Planting trees helps combat climate change, improves air quality, and supports biodiversity. Let’s work together to make our environment healthier and more sustainable. Every tree counts—be a part of this change!'
+    // },
+
   ];
 
   function renderNotices(homePage = true) {
