@@ -6,8 +6,8 @@ document.addEventListener('DOMContentLoaded', function() {
     aspectRatio: 1.5,   
     events: [
 
-      // { title: 'Tree Plantation', start: '2025-02-28', color: '#28a745' },
-      // { title: 'Blood Donation Camp', start: '2025-03-01', color: '#dc3545' },
+      // { title: 'Tree Plantation', start: '2025-03-13', color: '#28a745' },
+      { title: 'Mahadan 10.0', start: '2025-03-13', color: '#dc3545' },
       
 
     ]

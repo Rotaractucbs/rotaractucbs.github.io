@@ -208,11 +208,12 @@ function hideToasts() {
 
 document.addEventListener('DOMContentLoaded', function () {
   const noticeContent = [
-    // {
-    //   title: 'Tree Plantation Drive',
-    //   date: '28 February 2025',
-    //   description: 'Join us on February 28th for a Tree Plantation Drive and take a step toward a greener future! Planting trees helps combat climate change, improves air quality, and supports biodiversity. Let’s work together to make our environment healthier and more sustainable. Every tree counts—be a part of this change!'
-    // },
+
+    {
+      title: 'Be a Hero, Save a Life – Mahadan 10.0 is Here!',
+      date: '13th March 2025',
+      description: 'We are thrilled to invite you to Mahadan 10.0, a mega blood donation camp organized by Rotary District 3040, with active participation from Rotary District 3080 and our club. This is an incredible opportunity to make a real difference by donating blood and saving lives. Join us at 📍 The Ridge, Shimla, on 13th March and be a part of this noble cause. ⏰ Time: 9 AM - 5 PM '
+    },
 
   ];
 
