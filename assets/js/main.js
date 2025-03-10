@@ -211,6 +211,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     {
       title: 'Be a Hero, Save a Life – Mahadan 10.0 is Here!',
+      image: '../../assets/images/Projects/mahadan10.jpg',
       date: '13th March 2025',
       description: 'We are thrilled to invite you to Mahadan 10.0, a mega blood donation camp organized by Rotary District 3040, with active participation from Rotary District 3080 and our club. This is an incredible opportunity to make a real difference by donating blood and saving lives. Join us at 📍 The Ridge, Shimla, on 13th March and be a part of this noble cause. ⏰ Time: 9 AM - 5 PM '
     },
@@ -239,6 +240,11 @@ document.addEventListener('DOMContentLoaded', function () {
         noticeItem = `
           <div class="w-full px-4 md:w-1/2 lg:w-1/3">
             <div class="wow fadeInUp group mb-10" data-wow-delay=".1s">
+              <div class="mb-8 overflow-hidden rounded-[5px]">
+                <a href="javascript:void(0)" class="block">
+                  <img src="${item.image}" alt="image" class="w-full transition group-hover:rotate-6 group-hover:scale-125" />
+                </a>
+              </div>
               <h3>
                 <a href="javascript:void(0)"
                   class="mb-4 inline-block text-xl font-semibold text-dark hover:text-primary dark:text-white dark:hover:text-primary">
@@ -249,8 +255,8 @@ document.addEventListener('DOMContentLoaded', function () {
                 <span class="mb-6 inline-block rounded-[5px] bg-primary px-4 py-0.5 text-center text-xs font-medium leading-loose text-white">
                   ${item.date}
                 </span>
-                <p class="max-w-[370px] text-base text-body-color dark:text-dark-6" style="text-align: justify;">
-                  ${item.description}
+                <p class="max-w-[380px] text-base text-body-color dark:text-dark-6" style="text-align: justify;">
+                ${item.description}
                 </p>
               </div>
             </div>
