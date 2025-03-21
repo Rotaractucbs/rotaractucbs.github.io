@@ -209,12 +209,12 @@ function hideToasts() {
 document.addEventListener('DOMContentLoaded', function () {
   const noticeContent = [
 
-    {
-      title: 'Be a Hero, Save a Life – Mahadan 10.0 is Here!',
-      image: '../../assets/images/Projects/mahadan10.jpg',
-      date: '13th March 2025',
-      description: 'We are thrilled to invite you to Mahadan 10.0, a mega blood donation camp organized by Rotary District 3040, with active participation from Rotary District 3080 and our club. This is an incredible opportunity to make a real difference by donating blood and saving lives. Join us at 📍 The Ridge, Shimla, on 13th March and be a part of this noble cause. ⏰ Time: 9 AM - 5 PM '
-    },
+    // {
+    //   title: 'Be a Hero, Save a Life – Mahadan 10.0 is Here!',
+    //   image: '../../assets/images/Projects/mahadan10.jpg',
+    //   date: '13th March 2025',
+    //   description: 'We are thrilled to invite you to Mahadan 10.0, a mega blood donation camp organized by Rotary District 3040, with active participation from Rotary District 3080 and our club. This is an incredible opportunity to make a real difference by donating blood and saving lives. Join us at 📍 The Ridge, Shimla, on 13th March and be a part of this noble cause. ⏰ Time: 9 AM - 5 PM '
+    // },
 
   ];
 
@@ -280,6 +280,13 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // Blog Content
   const blogContent = [
+    {
+      title: 'Blood Donation Camp: A Triumph of Humanity and Service',
+      image: '../../assets/images/Projects/mahadan10.jpg',
+      date: 'March 13, 2025',
+      description: 'The Rotaract Club of UCBS, in collaboration with the Rotary Club Shimla Hill Queens, organized a blood donation camp at The Ridge, Shimla, during Rotaract Mahadaan Week. This initiative united individuals from diverse backgrounds, emphasizing the profound impact of blood donation in saving lives and fostering a spirit of community service.',
+      link: '../../blogs/13-march-2025.html'
+    },
     {
       title: 'Saanjh 2.0: A Cultural Exchange Experience',
       image: '../../assets/images/photos/MEVNT.jpeg',
@@ -426,15 +433,16 @@ document.addEventListener('DOMContentLoaded', function () {
   // Footer Blog Content
   const footerBlogContent = [
     {
+      title: 'Blood Donation Camp: A Triumph of Humanity and Service',
+      image: '../../assets/images/Projects/mahadan10.jpg',
+      link: '../../blogs/13-march-2025.html'
+    },
+    {
       title: 'Saanjh 2.0: A Cultural Exchange Experience',
       image: '../../assets/images/photos/MEVNT.jpeg',
       link: '../../blogs/22-february-2025.html'
-    },
-    {
-      title: '📸 Photography Competition 2025 🌿',
-      image: '../../assets/images/photos/PC.jpg',
-      link: '../../blogs/19-january-2025.html'
     }
+    
   ];
 
 
