@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
     aspectRatio: 1.5,   
     events: [
 
-      { title: 'Mahadan 10.0', start: '2025-03-13', color: '#dc3545' }, 
+      // { title: 'Mahadan 10.0', start: '2025-03-13', color: '#dc3545' },
 
     ]
   });
